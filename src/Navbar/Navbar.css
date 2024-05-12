@@ -95,12 +95,15 @@ transition: .1s ease-in-out;
       height: 2rem;
       width: 2rem;
       font-size: 1.2rem;
-      cursor: pointer;
+    
       border-radius: 1rem;
       transition: .3s ease-in-out;
     }
     .bar-icon:hover{
         transform: scale(1.3);
+    }
+    .bar-iconreal{
+        cursor: pointer;
     }
  
     .nav-list2 .sign{
@@ -114,10 +117,12 @@ height: 11rem;
         font-size: 2.5rem;
         display: flex;
         flex-direction: row-reverse;
-        cursor: pointer;
             }
     
-    
+    .closeiconx{
+        cursor: pointer;
+    }
+
 .sign img{
     height: 10rem;
 }

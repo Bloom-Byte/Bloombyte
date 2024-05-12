@@ -1,9 +1,9 @@
 import React, { useState }  from 'react'
 import './Navbar.css'
-import Logo from './Bytechain-11.png'
+import Logo from './logo2min.png'
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-import Sign from './Bytechain-19.png'
+import Sign from './Bytechain-19-min.png'
 
 
 const Navbar = () => {
@@ -23,8 +23,8 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
       <div className="navbar-wall">
-      <div className="bar-icon"  onClick={toggleMenu}><RiMenu2Line /></div>
-      <img src={Logo} alt="logo"/>
+      <div className="bar-icon"  onClick={toggleMenu}><RiMenu2Line  className='bar-iconreal'/></div>
+      <img src={Logo} alt="logo" />
       <div className="nav-list">
         <a href="#" className={activeButton === 'Home' ? 'active' : ''}
             onClick={() => handleButtonClick('Home')}>Home</a>
@@ -45,9 +45,9 @@ const Navbar = () => {
         </div>
         <div className={`nav-list2 ${isMenuOpen ? 'open' : ''}`}>
           <div className="iconx">
-          <IoMdClose onClick={toggleMenu}/>
+          <IoMdClose onClick={toggleMenu} className='closeiconx'/>
           </div>          <div className="sign">
-          <img src={Sign} alt="" className=''/>
+          <img src={Sign} alt="" className='' loading='lazy'/>
           </div>
           <a href="#">Home</a>
           <a href="#">About</a>
