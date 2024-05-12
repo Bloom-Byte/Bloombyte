@@ -1,0 +1,28 @@
+.Navbar{
+    padding-top: 2rem;
+   display: flex;
+justify-content: center;
+align-items: center;    
+}
+
+.navbar-wall img{
+    height: 12rem;
+}
+
+.navbar-wall{
+    overflow: hidden;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.5); /* Change 0.5 to your desired opacity value (between 0 and 1) */
+width: 53rem;
+}
+
+.nav-list a{
+    color: white;
+    margin: 1rem;
+    font-size: 0.9rem;
+}
