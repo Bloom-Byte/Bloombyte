@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="iconx">
           <IoMdClose onClick={toggleMenu} className='closeiconx'/>
           </div>          <div className="sign">
-          <img src={Sign} alt="" className='' />
+          <img src={Sign} alt="" className=''  loading='lazy'/>
           </div>
           <a href="#">Home</a>
           <a href="#">About</a>
