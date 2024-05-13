@@ -107,6 +107,11 @@ transition: .1s ease-in-out;
     }
  
     .nav-list2 .sign{
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 12rem;
+        left: 0px;
         display: flex;
         justify-content: center;
 height: 11rem;
