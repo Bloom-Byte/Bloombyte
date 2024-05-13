@@ -1,9 +1,9 @@
 import React, { useState }  from 'react'
 import './Navbar.css'
-import Logo from './logo2min.png'
+import Logo from './mainmain.png'
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-import Sign from './Bytechain-19-min.png'
+import Sign from './main.png'
 
 
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="iconx">
           <IoMdClose onClick={toggleMenu} className='closeiconx'/>
           </div>          <div className="sign">
-          <img src={Sign} alt="" className=''  loading='lazy'/>
+          <img src={Sign} alt="" className='' />
           </div>
           <a href="#">Home</a>
           <a href="#">About</a>
