@@ -1,0 +1,88 @@
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;
+gap: 3rem;
+}
+
+.home-words{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.home-words h1{
+    color: #067EF6;
+    font-size: clamp(1rem, 5vw, 3.1rem); 
+    font-family: 'Monda-Regular', sans-serif;
+}
+
+.home-words p{
+    font-size:  clamp(0.7rem, 2vw, 1.3rem);
+    font-family: 'Inter'; 
+    font-weight: 300; 
+
+    }
+
+.home-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.home-icon .getintouch{
+    height: 3rem;
+    width: 9.3rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+transition: .3s ease-in-out;
+}
+
+.home-icon .getintouch:hover{
+    transform: scale(1.1);
+    
+}
+
+.home-icon .viewproject{
+    height: 3rem;
+    width: 9.3rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    border-radius: 2rem;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+
+ cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.home-icon .viewproject:hover{
+    transform: scale(1.1);
+    
+}
+
+@media screen and (max-width: 700px) {
+    .home-words{
+        gap: 0.3rem;
+    }
+    .home-words p{
+        padding: 0rem 1rem;
+    }
+    .home-icon .getintouch, .home-icon .viewproject{
+        width: 7.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-icon .getintouch, .home-icon .viewproject{
+        width: 6.3rem;
+        font-size: 0.7rem;
+    }
+
+
+}

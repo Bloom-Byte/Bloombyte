@@ -3,7 +3,8 @@ import HomeOne from './HomeOne/HomeOne'
 
 const Home = () => {
   return (
-      <>
+    <>
+      <HomeOne/>
       </> 
 )
 }

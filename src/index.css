@@ -19,9 +19,35 @@ body{
     background-attachment: fixed;
     background-size:  cover;
     background-color: #999;
-
+    
+    
 }
+
+
+section{
+    padding: 8rem 3% 12rem;
+    color: white;
+}
+
+
+@font-face {
+    font-family: 'Monda-Regular';
+    src: url('./fonts/Monda-Bold.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
 
 ::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
 }
+
+/* This will disable text selection */
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  }

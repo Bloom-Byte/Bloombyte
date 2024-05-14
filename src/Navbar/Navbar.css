@@ -21,7 +21,7 @@ align-items: center;
     align-items: center;
     border-radius: 2rem;
     background: rgba(255, 255, 255, 0.5); 
-width: 53rem;
+    width: clamp(53rem, 100%, 65rem);
 }
 
 .nav-list {
@@ -34,7 +34,7 @@ width: 53rem;
     margin: 0.5rem;
     font-size: clamp(0.6rem, 2vw, 0.9rem);
     text-align: center;
-    width: clamp(2rem, 8vw, 4rem);
+    width: 4rem;
     padding-top: 1rem;
 padding-bottom: 1rem;
 transition: .1s ease-in-out;
@@ -76,7 +76,14 @@ transition: .1s ease-in-out;
         font-size: 1.4rem;
         color: white;
     line-height: 3rem;
+    text-decoration: none;
+    position: static;
+    z-index: 999;
+    transition: .3s ease-in-out;
     }
+.nav-list2 a:hover{
+    color: aqua;
+}
 
     .nav-list2 > a::before {
         background: transparent;
