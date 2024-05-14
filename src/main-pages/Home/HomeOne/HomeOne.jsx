@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomeOne.css'
 import { MdArrowOutward } from "react-icons/md";
+import { IoArrowDownCircleOutline } from "react-icons/io5";
 
 const HomeOne = () => {
   return (
@@ -15,6 +16,9 @@ const HomeOne = () => {
         <div className="home-icon">
           <button className='getintouch'>Get in Touch <MdArrowOutward /></button>
           <button className='viewproject'> View Projects</button>
+        </div>
+        <div className="scroll-icon">
+          <IoArrowDownCircleOutline className='down-icon'/>
         </div>
       </div>
     </section>

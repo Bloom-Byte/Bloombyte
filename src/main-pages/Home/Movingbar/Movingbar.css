@@ -1,0 +1,45 @@
+.bar{
+    background-color: #067EF6;
+height: 10vh;    
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.whitebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    height: 50%;
+    width: 100%;
+ }
+
+.whitebar .roll{
+    font-family: 'Inter';
+  display: flex;
+  gap: 7rem;
+    white-space: nowrap;
+    text-align: center;
+    animation: moveLine 10s linear infinite ;
+   
+}
+
+.roll-content{
+    display: flex;
+    gap: 0.3rem;
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.iconstar{
+    color: #067EF6;
+}

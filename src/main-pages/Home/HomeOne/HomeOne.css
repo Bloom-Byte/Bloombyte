@@ -15,8 +15,9 @@ gap: 3rem;
 
 .home-words h1{
     color: #067EF6;
-    font-size: clamp(1rem, 5vw, 3.1rem); 
+    font-size: clamp(1.5rem, 4vw, 3.1rem); 
     font-family: 'Monda-Regular', sans-serif;
+
 }
 
 .home-words p{
@@ -64,6 +65,28 @@ transition: .3s ease-in-out;
 .home-icon .viewproject:hover{
     transform: scale(1.1);
     
+}
+
+.scroll-icon{
+    background-color: #067EF6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 32rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.scroll-icon:hover{
+    transform: scale(1.1);
+}
+
+.down-icon{
+    font-size: 1.4rem;
 }
 
 @media screen and (max-width: 700px) {
