@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { useRef, useEffect }  from 'react'
 import './HomeOne.css'
 import { MdArrowOutward } from "react-icons/md";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
 
 const HomeOne = () => {
+
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollTo({
+        top: scrollRef.current.offsetTop,
+        behavior: 'smooth'
+      });
+    };
+
+    scrollRef.current.addEventListener('click', handleScroll);
+
+    return () => {
+      scrollRef.current.removeEventListener('click', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <section>
+    <section className='Homeone'>
       <div className="home-content">
         <div className="home-words">
 <h1>Innovative Web and Mobile Solutions 
@@ -17,7 +36,7 @@ const HomeOne = () => {
           <button className='getintouch'>Get in Touch <MdArrowOutward /></button>
           <button className='viewproject'> View Projects</button>
         </div>
-        <div className="scroll-icon">
+        <div className="scroll-icon" ref={scrollRef}>
           <IoArrowDownCircleOutline className='down-icon'/>
         </div>
       </div>
