@@ -66,7 +66,7 @@ transition: .1s ease-in-out;
         background: #01080F;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 110vh;
         z-index: 100;
         transform: translateX(-100%);
         transition: all .45s;
