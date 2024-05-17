@@ -10,7 +10,7 @@ const HomeOne = () => {
   useEffect(() => {
     const handleScroll = () => {
       window.scrollTo({
-        top: scrollRef.current.offsetTop,
+        top: document.documentElement.scrollHeight,
         behavior: 'smooth'
       });
     };

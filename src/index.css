@@ -12,16 +12,12 @@
     
 }
 body{
-    background-color: black;
     color: white;
     background-image: url('./background.png') ;
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size:  cover;
-    background-color: #999;
-    
-    
 }
 
 
