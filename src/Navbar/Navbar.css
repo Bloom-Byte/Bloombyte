@@ -71,7 +71,9 @@ transition: .1s ease-in-out;
         transform: translateX(-100%);
         transition: all .45s;
     }
-
+    .body-no-scroll {
+        overflow: hidden;
+    }
     .nav-list2 a{
         font-size: 1.4rem;
         color: white;

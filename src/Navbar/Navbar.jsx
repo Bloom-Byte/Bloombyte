@@ -1,4 +1,4 @@
-import React, { useState }  from 'react'
+import React, { useState, useEffect }  from 'react'
 import './Navbar.css'
 import Logo from './mainmain.png'
 import { RiMenu2Line } from "react-icons/ri";
@@ -9,6 +9,7 @@ import Sign from './main.png'
 const Navbar = () => {
   const [activeButton, setActiveButton] = useState('Home'); // Initialize active button state with 'Home'
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   // Function to handle click on a button
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName === activeButton ? 'Home' : buttonName);
@@ -18,6 +19,15 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add('body-no-scroll');
+    } else {
+      document.body.classList.remove('body-no-scroll');
+    }
+  }, [isMenuOpen]);
+
 
 
   return (
