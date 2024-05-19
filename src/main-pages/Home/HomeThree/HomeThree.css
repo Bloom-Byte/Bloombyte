@@ -1,0 +1,137 @@
+.homethree{
+    background-color:#01080F
+    ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.threewall{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ gap: 36rem;
+}
+
+
+.threetopic h1{
+    font-size: clamp(1rem, 4vw, 2rem);
+    padding-left: 2.1rem;
+}
+
+.threetopic h1 span{
+    color: #067EF6;
+    
+}
+
+.speci{
+    display: flex;
+gap: 0.3rem;
+}
+
+ .speci hr {
+    border: 1px solid grey; /* Change the color and width of the line */
+    width:  clamp(4rem, 9vw, 6rem); /* Adjust the width */
+    margin: 20px 0; /* Add some margin above and below the line */
+
+}
+
+.three-btn{
+    display: flex;
+
+gap: 1rem;
+}
+.getbtn{
+    border-radius: 3rem;
+    height: 3rem;
+    width: 9rem;
+    color: white;
+    background: #067EF6;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.getbtn:hover{
+    transform: scale(1.1);
+}
+
+.vbtn{
+    border-radius: 3rem;
+    height: 3rem;
+    width: 8.6rem;
+    color: white;
+border: 1px solid;
+cursor: pointer;
+    background: black;
+    transition: .3s ease-in-out;
+}
+
+.vbtn:hover{
+    transform: scale(1.1);
+}
+
+.three-content{
+    padding-left: 2.1rem;
+}
+
+.three-content hr{
+    border: 1px solid grey; /* Change the color and width of the line */
+    width: clamp(10rem, 96%, 80rem); /* Adjust the width */
+    margin: 20px 0; /* Add some margin above and below the line */
+
+}
+
+.three-content p{
+    font-size: clamp(0.8rem, 1.9vw, 1.5rem);
+    font-family: 'inter';
+    display: flex;
+    align-items: center;
+}
+
+.arrowicon-tree{
+    position: absolute;
+    left: 90%;
+}
+
+@media (max-width: 1300px) {
+    .threewall{
+gap: clamp(5rem, 29vw, 18rem);
+    }
+
+   
+    .getbtn{
+        border-radius: 3rem;
+        height: 3rem;
+        width: 5rem;
+        font-size: 0.6rem;
+        color: white;
+        background: #067EF6;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    
+    
+    .vbtn{
+        border-radius: 3rem;
+        height: 3rem;
+        width: 4.8rem;
+        font-size: 0.6rem;
+        color: white;
+    border: 1px solid;
+    cursor: pointer;
+        background: black;
+        transition: .3s ease-in-out;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .threewall{
+        gap: clamp(0.5rem, 14vw, 10rem);
+            }
+        
+            .three-btn{
+                display: flex;
+                flex-direction: column;
+            }
+}
