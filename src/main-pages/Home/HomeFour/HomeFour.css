@@ -1,0 +1,101 @@
+.four-begin{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.homefour{
+   
+    display: flex;
+    gap: clamp(5rem, 13vw, 11rem);
+    flex-direction: row;
+}
+
+.homefour h1{
+    color: #067EF6;
+    padding-left: 4.2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+ 
+}
+.four-content{
+    display: flex;
+   
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.four-content p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+    font-family: 'inter';
+}
+
+.mini-content{
+    display: flex;
+    gap: 13rem;
+  }
+
+.ten, .five-hundred, .ninety-eight{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.ten p, .five-hundred p, .ninety-eight p{
+    font-size: 0.8rem;
+}
+
+
+
+.four-box{
+    padding-top: 4rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.fbox1, .fbox2{
+    background-color: #D9D9D9;
+    height: 23rem;
+    width: 39rem;
+    border-radius: 3rem;
+}
+
+@media (max-width: 1300px) {
+   .homefour{
+    gap: clamp(1.4rem, 2vw, 4rem);
+   }
+  
+.mini-content {
+    gap: 3rem;
+}
+    
+}
+@media (max-width: 700px) {
+.homefour{
+    flex-direction: column;
+}
+
+.homefour h1{
+    text-align: center;
+    padding-left: 0rem;
+}
+
+.four-content p{
+    text-align: center;
+}
+
+.mini-content {
+    gap: 2rem;
+}
+
+.fbox1, .fbox2{
+    height: clamp(12rem, 3vw, 14rem);
+    width: 39rem;
+ }
+ 
+
+}
