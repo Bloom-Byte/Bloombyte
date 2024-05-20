@@ -44,6 +44,8 @@
 }
 .ten p, .five-hundred p, .ninety-eight p{
     font-size: 0.8rem;
+   
+    
 }
 
 
@@ -96,6 +98,10 @@
     height: clamp(12rem, 3vw, 14rem);
     width: 39rem;
  }
- 
+ .ten p, .five-hundred p, .ninety-eight p{
+    font-size: 0.6rem;
+   
+    
+}
 
 }
