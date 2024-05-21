@@ -147,7 +147,7 @@ padding-left: 2rem;
 
    .five-box1 p, .five-box2 p{
    
-    font-size: 0.4rem;
+    font-size: clamp(0.1rem, 2vw, 0.4rem);
     
     }
 
