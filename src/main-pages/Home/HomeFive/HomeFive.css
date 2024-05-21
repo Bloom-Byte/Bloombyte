@@ -167,7 +167,7 @@ padding-left: 2rem;
 }
 
 .comment-topic small{
-    font-size:0.3rem;
+    font-size:clamp(0.2rem, 1.3vw, 0.3rem);
    
 }
 
