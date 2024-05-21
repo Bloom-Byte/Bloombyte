@@ -7,6 +7,7 @@
 .homefour{
    
     display: flex;
+
     gap: clamp(5rem, 13vw, 11rem);
     flex-direction: row;
 }
@@ -32,6 +33,8 @@
 
 .mini-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 13rem;
   }
 
@@ -62,7 +65,7 @@
 .fbox1, .fbox2{
     background-color: #D9D9D9;
     height: 23rem;
-    width: 39rem;
+    width: 35.3rem;
     border-radius: 3rem;
 }
 
@@ -74,7 +77,12 @@
 .mini-content {
     gap: 3rem;
 }
-    
+.fbox1, .fbox2{
+  
+    height: 20rem;
+  
+}
+
 }
 @media (max-width: 700px) {
 .homefour{

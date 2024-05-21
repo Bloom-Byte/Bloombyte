@@ -4,6 +4,7 @@ import Movingbar from './Movingbar/Movingbar'
 import HomeTwo from './HomeTwo/HomeTwo'
 import HomeThree from './HomeThree/HomeThree'
 import HomeFour from './HomeFour/HomeFour'
+import HomeFive from './HomeFive/HomeFive'
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
       <Movingbar />
       <HomeTwo />
       <HomeThree />
-      <HomeFour/>
+      <HomeFour />
+      <HomeFive/>
       </> 
 )
 }
