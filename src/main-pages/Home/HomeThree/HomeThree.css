@@ -10,8 +10,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
- gap: 36rem;
+ gap: 29rem;
 }
+
 
 
 .threetopic h1{
@@ -27,12 +28,14 @@
 .speci{
     display: flex;
 gap: 0.3rem;
+
+align-items: center;
 }
 
  .speci hr {
     border: 1px solid grey; /* Change the color and width of the line */
     width:  clamp(4rem, 9vw, 6rem); /* Adjust the width */
-    margin: 20px 0; /* Add some margin above and below the line */
+    margin: 40px 0; /* Add some margin above and below the line */
 
 }
 
@@ -93,7 +96,7 @@ cursor: pointer;
     left: 90%;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .threewall{
 gap: clamp(5rem, 29vw, 18rem);
     }

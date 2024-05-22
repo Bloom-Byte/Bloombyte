@@ -46,7 +46,7 @@ transition: .3s ease-in-out;
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
 
     .seven-box p{
         font-size: 2rem;
@@ -61,7 +61,7 @@ transition: .3s ease-in-out;
 @media (max-width: 700px) {
     .seven-box{
         height: 23rem;
-        width: 23.3rem;
+        width: 19.5rem;
       
     }
     .seven-box p{
