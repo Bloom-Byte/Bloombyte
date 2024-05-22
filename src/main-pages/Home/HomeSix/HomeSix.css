@@ -1,0 +1,53 @@
+.six{
+    background-color: black;
+    padding: 3rem 3% 3rem;
+    display: flex;
+    flex-direction: row;
+   gap: 11rem;
+}
+.six p{
+    padding-left: 4.2rem;
+    font-size:1.5rem;
+white-space: nowrap;
+}
+
+.six-content{
+    display: flex;
+    gap: 1rem;
+}
+.six-box{
+    background-color: white;
+    height: 2rem;
+    width: 5rem;
+    
+}
+
+@media (max-width: 1300px) {
+    .six{
+        gap: 3rem;
+    }
+    .six p{
+        font-size:1rem;
+    }
+    .six-box{
+        height: 1.5rem;
+        width: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .six{
+        gap: 1.5rem;
+    }
+    .six p{
+        font-size:0.7rem;
+        padding-left: 0.5rem;
+    }
+    .six-content{
+        flex-wrap: wrap;
+    }
+    .six-box{
+        height: 1rem;
+        width: 1rem;
+    }
+}

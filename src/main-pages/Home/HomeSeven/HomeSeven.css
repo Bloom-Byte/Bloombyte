@@ -1,0 +1,82 @@
+.seven{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.seven-box{
+    height: 28rem;
+    width: 53rem;
+    background-color: #067EF6;
+    border-top-left-radius:2rem;
+    border-top-right-radius: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+.seven-box p{
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-family: 'inter';
+   text-align: center;
+}
+.expp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven-btn{
+    height: 3rem;
+    width: 9.3rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+transition: .3s ease-in-out;
+}
+
+.seven-btn:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1300px) {
+
+    .seven-box p{
+        font-size: 2rem;
+    }
+    .seven-box{
+        height: 25rem;
+    width: 43rem;
+      
+    }
+}
+
+@media (max-width: 700px) {
+    .seven-box{
+        height: 23rem;
+        width: 23.3rem;
+      
+    }
+    .seven-box p{
+        font-size: 1.3rem;
+    }
+    .seven-btn{
+        height: 3rem;
+        width: 7.6rem;
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+        border-radius: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        
+    transition: .3s ease-in-out;
+    }
+    
+
+}
