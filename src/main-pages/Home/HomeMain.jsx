@@ -7,7 +7,7 @@ import HomeFour from './HomeFour/HomeFour'
 import HomeFive from './HomeFive/HomeFive'
 import HomeSix from './HomeSix/HomeSix'
 import HomeSeven from './HomeSeven/HomeSeven'
-import HomeFooter from './HomeFooter/HomeFooter'
+
 
 const Home = () => {
   return (
@@ -20,7 +20,6 @@ const Home = () => {
       <HomeFive />
       <HomeSix />
       <HomeSeven />
-      <HomeFooter/>
       </> 
 )
 }

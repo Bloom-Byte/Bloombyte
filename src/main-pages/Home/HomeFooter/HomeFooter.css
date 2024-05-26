@@ -19,7 +19,7 @@ align-items: center;
  padding-bottom: 1rem;
 }
 
-.footer-nav a{
+.footer-nav .flink{
 color: #475467;
 }
 .last{

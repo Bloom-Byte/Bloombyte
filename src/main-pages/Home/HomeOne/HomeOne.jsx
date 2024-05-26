@@ -15,10 +15,15 @@ const HomeOne = () => {
       });
     };
 
-    scrollRef.current.addEventListener('click', handleScroll);
+    const currentRef = scrollRef.current;
+    if (currentRef) {
+      currentRef.addEventListener('click', handleScroll);
+    }
 
     return () => {
-      scrollRef.current.removeEventListener('click', handleScroll);
+      if (currentRef) {
+        currentRef.removeEventListener('click', handleScroll);
+      }
     };
   }, []);
 
