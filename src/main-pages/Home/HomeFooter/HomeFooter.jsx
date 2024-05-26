@@ -7,7 +7,7 @@ const HomeFooter = () => {
   return (
       <div className='footer'>
           <div className="footer-nav">
-          <Link to='/'className='flink'>Home</Link>
+          <Link to='/' className='flink'>Home</Link>
           <Link to='/about' className='flink'>About Us</Link>
           <Link className='flink'>Services</Link>
           <Link className='flink'>Projects</Link>

@@ -1,0 +1,89 @@
+.Abt-two{
+    background: #01080F;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 4rem;
+}
+
+.Abttwo-topic{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 8rem;
+
+}
+
+.Abttwo-topic h2{
+    white-space: nowrap;
+    font-size: clamp(1.3rem, 4vw, 2rem); 
+    color: #067EF6;
+    font-family: 'Monda-Regular', sans-serif;
+}
+
+
+
+.Abttwo-topic p{
+    font-size:  clamp(0.8rem, 2vw, 1rem);
+    font-family: 'inter';
+text-align: center;
+}
+
+.abttwo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.abt-bx{
+    height: 12rem;
+    width: 32rem;
+    line-height: 1.5rem;
+    background-color: black;
+    padding: 2rem 2rem;
+}
+
+.abt-bx h4{
+    font-family: 'Inter';
+    color: #067EF6;
+}
+
+.abt-bx p{
+    font-size: 0.9rem;
+    font-family: 'Inter';
+    display: flex;
+    flex-wrap: wrap;
+   
+ }
+
+
+
+ @media screen and (max-width: 1200px) 
+ {
+.Abttwo-topic{
+    gap: 3rem;
+}
+.abt-bx{
+   width: 20rem;
+}
+
+.abt-bx p{
+    line-height: 1.2rem;
+}
+
+ }
+
+
+ @media screen and (max-width: 700px) {
+    .Abttwo-topic{
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .abt-bx{
+       width: 23rem;
+    }
+ }
