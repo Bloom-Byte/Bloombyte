@@ -174,4 +174,10 @@ padding-left: 2rem;
 }
 
 
-
+@media (max-width:500px) {
+    .five-box1 p, .five-box2 p{
+   
+        font-size: 0.4rem;
+        
+        }
+}
