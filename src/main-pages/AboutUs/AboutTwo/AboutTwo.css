@@ -20,6 +20,7 @@ gap: 8rem;
     font-size: clamp(1.3rem, 4vw, 2rem); 
     color: #067EF6;
     font-family: 'Monda-Regular', sans-serif;
+    padding-left: 4.2rem;
 }
 
 
@@ -28,6 +29,7 @@ gap: 8rem;
     font-size:  clamp(0.8rem, 2vw, 1rem);
     font-family: 'inter';
 text-align: center;
+padding-right: 4.2rem;
 }
 
 .abttwo-box{
@@ -66,6 +68,8 @@ text-align: center;
 .Abttwo-topic{
     gap: 3rem;
 }
+
+
 .abt-bx{
    width: 20rem;
 }
@@ -82,7 +86,14 @@ text-align: center;
         gap: 1rem;
         flex-direction: column;
     }
+.Abttwo-topic h2{
+    padding-left: 0rem;
+   
+}
 
+.Abttwo-topic p{
+    padding-right: 0rem;
+}
     .abt-bx{
        width: 20rem;
     }

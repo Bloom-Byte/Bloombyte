@@ -1,0 +1,80 @@
+.Abtree{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9rem;
+}
+
+.Abtree-topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.Abtree-topic h2{
+    white-space: nowrap;
+    font-size: clamp(1.3rem, 4vw, 2rem); 
+    color: #067EF6;
+    font-family: 'Monda-Regular', sans-serif;
+    padding-left: 4.2rem;
+}
+
+
+
+.Abtree-topic p{
+    font-size:  clamp(0.8rem, 2vw, 1rem);
+    font-family: 'inter';
+
+padding-right: 4.2rem;
+}
+
+.Abtree-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+  
+}
+
+.circle-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+gap: 0.5rem;    
+}
+
+.circle-content span{
+    color: #067EF6;
+    font-size: 0.8rem;
+    font-family: 'inter';
+
+}
+
+.cir{
+    height: 5rem;
+    width: 5rem;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .Abtree-topic{
+        flex-direction: column;
+            gap: 1rem;
+    }
+
+    .Abtree-topic h2{
+        padding-left: 0rem;
+    
+    }
+
+    .Abtree-topic p{
+        padding-right: 0rem;
+        text-align: center;
+    }
+}
