@@ -38,6 +38,7 @@ padding-right: 4.2rem;
     padding: 2.6rem 4rem;
     gap: 1rem;
     border-radius: 2rem;
+    width: 65.4rem;
 }
 .four-blue hr{
     border-left: 1px solid white; /* Thickness and color of the vertical line */
@@ -96,6 +97,10 @@ padding-right: 4.2rem;
 }
 
 @media screen and (max-width: 1200px) {
+   .four-blue{
+    width: 45rem;
+
+   }
     .four-blue h4{
         padding-right: 2rem;
   
@@ -124,6 +129,7 @@ padding-right: 4.2rem;
     .four-blue{
         padding: 2.6rem 0.4rem;
         gap: 0.7rem;
+        width:20rem;
     }
     .four-blue h4{
         padding-right: 0.3rem;
