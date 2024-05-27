@@ -99,21 +99,23 @@ padding-right: 4.2rem;
     .four-blue h4{
         padding-right: 2rem;
   
-        font-size: 1.1rem;
+        font-size: clamp(0.5rem, 4vw, 1.1rem);
     }
     .fivehun span{
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 1vw, 1.2rem);
+ 
     }
-    .fivehun p{
-        font-size: 0.7rem;
+    .fivehun p{       font-size: clamp(0.3rem, 2vw, 0.6rem);
+ 
         width: 11rem;
     }
    
     .ninetyf span{
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 1vw, 1.2rem);
+ 
     }
     .ninetyf p{
-        font-size: 0.7rem;
+        font-size: clamp(0.3rem, 2vw, 0.7rem);
         width: 11rem;
     }
 }
@@ -125,21 +127,11 @@ padding-right: 4.2rem;
     }
     .four-blue h4{
         padding-right: 0.3rem;
-        font-size: clamp(0.5rem, 4vw, 1.1rem);
     }
     .ninetyf p{
-        font-size: clamp(0.3rem, 2vw, 0.6rem);
         width: 5rem;
     }
-    .ninetyf span{
-        font-size: clamp(1rem, 1vw, 1.2rem);
-     
-    }
-    .fivehun span{
-        font-size: clamp(1rem, 1vw, 1.2rem);
-    }
      .fivehun p{
-        font-size: clamp(0.3rem, 2vw, 0.6rem);
         
         width: 5rem;
     }
