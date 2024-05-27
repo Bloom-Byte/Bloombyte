@@ -1,19 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HomeFooter.css'
 import imagef from '../HomeFooter/mainmain.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation  } from 'react-router-dom'
 
 const HomeFooter = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on component mount
+  }, [location.pathname]); // Trigger on pathname change
+
+  const handleClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top on link click
+  };
   return (
       <div className='footer'>
           <div className="footer-nav">
-          <Link to='/' className='flink'>Home</Link>
-          <Link to='/about' className='flink'>About Us</Link>
-          <Link className='flink'>Services</Link>
-          <Link className='flink'>Projects</Link>
-          <Link className='flink'>Careers</Link>
-          <Link className='flink'>Blog</Link>
-          <Link className='flink'>Contact</Link>    
+          <Link to='/' className='flink'  onClick={handleClick}>Home</Link>
+          <Link to='/about' className='flink'  onClick={handleClick}>About Us</Link>
+          <Link className='flink'  onClick={handleClick}>Services</Link>
+          <Link className='flink'  onClick={handleClick}>Projects</Link>
+          <Link className='flink'  onClick={handleClick}>Careers</Link>
+          <Link className='flink'  onClick={handleClick}>Blog</Link>
+          <Link className='flink'  onClick={handleClick}>Contact</Link>    
           </div>
           <hr />
           <div className="last">

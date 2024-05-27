@@ -4,20 +4,45 @@ import Logo from './mainmain.png'
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import Sign from './main.png'
-import { Link } from 'react-router-dom';
+import { Link, useLocation  } from 'react-router-dom';
 
 const Navbar = () => {
-  const [activeButton, setActiveButton] = useState('Home'); // Initialize active button state with 'Home'
+  const location = useLocation();
+  const [activeButton, setActiveButton] = useState(getActiveButton(location.pathname));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  // Function to handle click on a button
+ 
+ 
   const handleButtonClick = (buttonName) => {
     if (buttonName !== activeButton) {
       setActiveButton(buttonName);
     }
   };
+    function getActiveButton(pathname) {
+    switch (pathname) {
+      case '/':
+        return 'Home';
+      case '/about':
+        return 'About Us';
+      case '/services':
+        return 'Services';
+      case '/projects':
+        return 'Projects';
+      case '/careers':
+        return 'Careers';
+      case '/blog':
+        return 'Blog';
+      case '/contact':
+        return 'Contact';
+      default:
+        return 'Home';    }
+  }
 
-   
+
+  
+ useEffect(() => {
+  setActiveButton(getActiveButton(location.pathname));
+ }, [location]);
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -26,7 +51,7 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
+ 
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add('body-no-scroll');
@@ -34,7 +59,7 @@ const Navbar = () => {
       document.body.classList.remove('body-no-scroll');
     }
   }, [isMenuOpen]);
-
+  
 
 
   return (
@@ -47,7 +72,7 @@ const Navbar = () => {
             onClick={() => handleButtonClick('Home')}>Home</Link>
         <Link to='/about' className={`link ${activeButton === 'About Us' ? 'active' : ''}`}
             onClick={() => handleButtonClick('About Us')}>About Us</Link>
-        <Link href="#" className={`link ${activeButton === 'Services' ? 'active' : ''}`}
+        <Link  className={`link ${activeButton === 'Services' ? 'active' : ''}`}
             onClick={() => handleButtonClick('Services')}
       >Services</Link>
         <Link href="#"  className={`link ${activeButton === 'Projects' ? 'active' : ''}`}
