@@ -3,6 +3,7 @@ import AboutOne from './AboutOne/AboutOne'
 import AboutTwo from './AboutTwo/AboutTwo'
 import AboutThree from './AboutThree/AboutThree'
 import AboutFour from './AboutFour/AboutFour'
+import AboutFive from './AboutFive/AboutFive'
 
 const Aboutmain = () => {
   return (
@@ -10,7 +11,8 @@ const Aboutmain = () => {
       <AboutOne />
       <AboutTwo />
       <AboutThree />
-      <AboutFour/>
+      <AboutFour />
+      <AboutFive/>
       </>
   )
 }
