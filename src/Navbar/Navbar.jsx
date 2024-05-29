@@ -72,7 +72,7 @@ const Navbar = () => {
             onClick={() => handleButtonClick('Home')}>Home</Link>
         <Link to='/about' className={`link ${activeButton === 'About Us' ? 'active' : ''}`}
             onClick={() => handleButtonClick('About Us')}>About Us</Link>
-        <Link  className={`link ${activeButton === 'Services' ? 'active' : ''}`}
+        <Link  to='/services' className={`link ${activeButton === 'Services' ? 'active' : ''}`}
             onClick={() => handleButtonClick('Services')}
       >Services</Link>
         <Link href="#"  className={`link ${activeButton === 'Projects' ? 'active' : ''}`}
@@ -92,7 +92,8 @@ const Navbar = () => {
           <img src={Sign} alt="" className='' />
           </div>
           <Link to='/'  className="link" onClick={closeMenu}>Home</Link>
-          <Link to='/about'  className="link" onClick={closeMenu}>About</Link>
+          <Link to='/about' className="link" onClick={closeMenu}>About</Link>
+          <Link to='/services'  className="link" onClick={closeMenu}>Services</Link>
           <Link href="#"  className="link" onClick={closeMenu}>Project</Link>
           <Link href="#"  className="link" onClick={closeMenu}>Blog</Link>
           <Link href="#"  className="link" onClick={closeMenu}>Contact</Link>
