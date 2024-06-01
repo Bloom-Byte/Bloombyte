@@ -8,13 +8,15 @@ import { IoArrowDownCircleOutline } from "react-icons/io5";
 const ServiceOne = () => {
 
     var settings = {
-       
-        infinite: false,
+      infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
-        arrows: false,
+      arrows: false,
+      autoplay: true, // Enable autoplay
+      autoplaySpeed: 2000, // Autoplay interval in milliseconds (3 seconds)
+
         responsive: [
           {
             breakpoint: 1024,

@@ -33,6 +33,9 @@ body::before {
     background-repeat: inherit;
 }
 
+.background1{
+    background: black;
+}
 
 section{
     padding: 8rem 3% 12rem;

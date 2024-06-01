@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Home from './main-pages/Home/HomeMain'
 import HomeFooter from './main-pages/Home/HomeFooter/HomeFooter'
 import Navbar from './Navbar/Navbar'
@@ -14,11 +14,26 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/about" element={<Aboutmain />} />
-        <Route path="/services" element={<Servicemain />} />
+        <Route path="/services" element={<BackgroungImg backgroundClass="background1"><Servicemain /></BackgroungImg>} />
       </Routes>
       <HomeFooter/>
   </Router>
   )
 }
+
+const BackgroungImg = ({ backgroundClass, children }) => {
+ 
+  useEffect(() => {
+    document.body.className = backgroundClass;
+
+ 
+    return () => {
+      document.body.className = '';
+    };
+  }, [backgroundClass]);
+
+  return children;
+};
+
 
 export default App

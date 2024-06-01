@@ -1,8 +1,7 @@
 .serviceone{
     display: flex;
     flex-direction: column;
-    background-color: black;
-    gap: 1.8rem;
+     gap: 1.8rem;
   
 }
 
