@@ -7,13 +7,16 @@ import "slick-carousel/slick/slick-theme.css";
 const HomeTwo = () => {
 
   var settings = {
+    infinite: true,
+    speed: 500,
     dots: true,
-    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
