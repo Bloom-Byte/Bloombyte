@@ -19,7 +19,7 @@ const HomeFooter = () => {
           <Link to='/' className='flink'  onClick={handleClick}>Home</Link>
           <Link to='/about' className='flink'  onClick={handleClick}>About Us</Link>
           <Link to='/services' className='flink'  onClick={handleClick}>Services</Link>
-          <Link className='flink'  onClick={handleClick}>Projects</Link>
+          <Link to='/projects' className='flink'  onClick={handleClick}>Projects</Link>
           <Link className='flink'  onClick={handleClick}>Careers</Link>
           <Link className='flink'  onClick={handleClick}>Blog</Link>
           <Link className='flink'  onClick={handleClick}>Contact</Link>    

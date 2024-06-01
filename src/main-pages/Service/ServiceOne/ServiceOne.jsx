@@ -6,6 +6,15 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
 
 const ServiceOne = () => {
+  const scrollToServices = () => {
+
+    const scrollDistance = 800;
+
+    window.scrollTo({
+      top: scrollDistance,
+      behavior: 'smooth',
+    });
+  };
 
     var settings = {
       infinite: true,
@@ -14,8 +23,8 @@ const ServiceOne = () => {
         slidesToScroll: 3,
         initialSlide: 0,
       arrows: false,
-      autoplay: true, // Enable autoplay
-      autoplaySpeed: 2000, // Autoplay interval in milliseconds (3 seconds)
+      autoplay: true, 
+      autoplaySpeed: 2000, 
 
         responsive: [
           {
@@ -70,7 +79,7 @@ const ServiceOne = () => {
               </div>
           </Slider>
           <div className="serviceone-btn">
-              <button>View Services <IoArrowDownCircleOutline
+              <button onClick={scrollToServices}>View Services <IoArrowDownCircleOutline
               className='service-downicon'/></button>
           </div>
 </section>

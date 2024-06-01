@@ -33,6 +33,10 @@ body::before {
     background-repeat: inherit;
 }
 
+.background{
+    background-image: url('./background2.png') ;
+}
+
 .background1{
     background: black;
 }

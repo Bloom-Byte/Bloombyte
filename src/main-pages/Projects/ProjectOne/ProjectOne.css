@@ -1,0 +1,92 @@
+.projectone{
+    display: flex;
+    flex-direction: column;
+     gap: 1.8rem;
+  
+}
+
+.projecteone-topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projecteone-topic h1{
+   
+    color: #067EF6;
+    font-size: clamp(1.5rem, 4vw, 3.1rem); 
+    font-family: 'Monda-Regular', sans-serif;
+text-align: center;
+}
+
+.projecteone-topic p{
+    font-size:  clamp(0.7rem, 2vw, 1.3rem);
+    font-family: 'Inter'; 
+    font-weight: 300; 
+text-align: center;
+}
+
+.projectone-box{
+    background-color: white;
+    border-radius: 1.2rem;
+    height: 20rem; 
+  overflow: hidden;
+}
+.slick-slide{
+    display: flex;
+ }
+.slick-slide div{
+    margin: 0 0.3rem;
+ 
+}      
+
+  .projecteone-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .projecteone-btn button{
+    background-color: #067EF6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    width: 9.8rem;
+    height: 2.8rem;
+    position: absolute;
+    top: 3rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  .projecteone-btn button:hover{
+    transform: scale(1.1);
+  }
+
+  .projecte-downicon{
+   margin-left: 0.3rem;
+    font-size: 1.4rem;
+  }
+
+  
+@media screen and (max-width: 1200px) {
+    .projectone-box{
+        height: 14rem;
+    }
+    .projecteone-btn button{
+        width: 8.7rem;
+        font-size: 0.7rem;
+    }
+    .projecte-downicon{
+         font-size: 1.2rem;
+       }
+       
+}
+
+@media screen and (max-width: 700px) {
+       .projecteone-btn button{
+        top: 1rem;
+       }
+}

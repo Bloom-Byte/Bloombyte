@@ -5,6 +5,7 @@ import Navbar from './Navbar/Navbar'
 import Aboutmain from './main-pages/AboutUs/Aboutmain'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Servicemain from './main-pages/Service/Servicemain'
+import Projectmain from './main-pages/Projects/Projectmain'
 
 
 const App = () => {
@@ -13,8 +14,10 @@ const App = () => {
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Aboutmain />} />
+        <Route path="/about" element={<BackgroungImg backgroundClass="background"><Aboutmain /></BackgroungImg>} />
         <Route path="/services" element={<BackgroungImg backgroundClass="background1"><Servicemain /></BackgroungImg>} />
+        <Route path="/projects" element={<BackgroungImg backgroundClass="background1"><Projectmain /></BackgroungImg>} />
+        
       </Routes>
       <HomeFooter/>
   </Router>
