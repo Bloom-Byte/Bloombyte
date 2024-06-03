@@ -1,0 +1,79 @@
+.project-twowall{
+    background: #01080F;
+}
+
+.projecttwo-top{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.projecttwo-top h1{
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    padding-left: 2.8rem;
+    color: #067EF6;
+margin-right: 12rem;
+font-family: 'Monda-Regular', sans-serif;
+
+}
+.selectors{
+    margin-left: 12rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background: #475467;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+}
+
+.selectors p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem, 1rem;
+    height: 3.5rem;
+    border-radius: 3rem;
+    width: 7rem;
+ cursor: pointer;
+    font-size: 0.9rem;
+    transition: .3s ease-in-out;
+}
+
+
+.selectors p.active {
+    background-color: #067EF6;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .projecttwo-top h1{
+        margin-right: 5rem;
+        padding-left: 0rem;
+    }
+    .selectors{
+        margin-left: 0rem;
+        gap: 0rem;
+    }
+
+    .selectors p{
+        font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+.projecttwo-top{
+    flex-direction: column;
+}  
+
+.projecttwo-top h1{
+    margin-right: 0rem;
+}
+.projecttwo-top{
+    gap: 0.7rem;
+}
+.selectors p{
+    width: 4rem;
+    font-size: 0.6rem;
+}
+}
