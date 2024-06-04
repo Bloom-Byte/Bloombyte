@@ -45,7 +45,15 @@ const ProjectOne = () => {
         }
       ]
     };
+    const scrollToProject = () => {
 
+      const scrollDistance = 840;
+  
+      window.scrollTo({
+        top: scrollDistance,
+        behavior: 'smooth',
+      });
+    };
   return (
     <section className='projectone'>
     <div className="projecteone-topic">
@@ -70,7 +78,7 @@ const ProjectOne = () => {
         </div>
     </Slider>
     <div className="projecteone-btn">
-        <button>View Projects <IoArrowDownCircleOutline
+        <button onClick={scrollToProject}>View Projects <IoArrowDownCircleOutline
         className='projecte-downicon'/></button>
     </div>
 </section>

@@ -8,7 +8,7 @@ import { IoArrowDownCircleOutline } from "react-icons/io5";
 const ServiceOne = () => {
   const scrollToServices = () => {
 
-    const scrollDistance = 800;
+    const scrollDistance = 840;
 
     window.scrollTo({
       top: scrollDistance,
