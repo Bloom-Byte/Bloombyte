@@ -84,12 +84,17 @@ transition: .1s ease-in-out;
     transition: .3s ease-in-out;
     }
 .nav-list2 .link:hover{
-    color: aqua;
+   
 }
 
     .nav-list2 > .link::before {
         background: transparent;
     }
+
+    .nav-list2 .link.active {
+        color: #067EF6;
+    }
+    
   
     .nav-list2.open {
         transform: translateX(0);

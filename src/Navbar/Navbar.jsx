@@ -91,12 +91,12 @@ const Navbar = () => {
           </div>          <div className="sign">
           <img src={Sign} alt="" className='' />
           </div>
-          <Link to='/'  className="link" onClick={closeMenu}>Home</Link>
-          <Link to='/about' className="link" onClick={closeMenu}>About</Link>
-          <Link to='/services'  className="link" onClick={closeMenu}>Services</Link>
-          <Link to='./projects'  className="link" onClick={closeMenu}>Project</Link>
-          <Link href="#"  className="link" onClick={closeMenu}>Blog</Link>
-          <Link href="#"  className="link" onClick={closeMenu}>Contact</Link>
+          <Link to='/'  className={`link ${activeButton === 'Home' ? 'active' : ''}`} onClick={closeMenu}>Home</Link>
+          <Link to='/about' className={`link ${activeButton === 'About Us' ? 'active' : ''}`} onClick={closeMenu}>About</Link>
+          <Link to='/services' className={`link ${activeButton === 'Services' ? 'active' : ''}`} onClick={closeMenu}>Services</Link>
+          <Link to='./projects'  className={`link ${activeButton === 'Projects' ? 'active' : ''}`} onClick={closeMenu}>Project</Link>
+          <Link href="#"  className={`link ${activeButton === 'Blog' ? 'active' : ''}`} onClick={closeMenu}>Blog</Link>
+          <Link href="#"  className={`link ${activeButton === 'Contact' ? 'active' : ''}`} onClick={closeMenu}>Contact</Link>
 
         </div>
       </div>
