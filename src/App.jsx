@@ -6,7 +6,7 @@ import Aboutmain from './main-pages/AboutUs/Aboutmain'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Servicemain from './main-pages/Service/Servicemain'
 import Projectmain from './main-pages/Projects/Projectmain'
-
+import ProjectThree from './main-pages/Projects/ProjectThree/ProjectThree'
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
         <Route path="/about" element={<BackgroungImg backgroundClass="background"><Aboutmain /></BackgroungImg>} />
         <Route path="/services" element={<BackgroungImg backgroundClass="background1"><Servicemain /></BackgroungImg>} />
         <Route path="/projects" element={<BackgroungImg backgroundClass="background1"><Projectmain /></BackgroungImg>} />
+        <Route path="/projectthree" element={<BackgroungImg backgroundClass="background1"><ProjectThree /></BackgroungImg>} />
         
       </Routes>
       <HomeFooter/>

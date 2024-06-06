@@ -1,13 +1,18 @@
 import React, { useState }  from 'react'
 import './ProjectTwo.css'
+import { useNavigate } from 'react-router-dom';
 
 const ProjectTwo = () => {
-
     const [activeSelector, setActiveSelector] = useState('E-commerce');
+    const navigate = useNavigate();
 
     const handleSelectorClick = (selector) => {
       setActiveSelector(selector);
   };
+
+  const handleViewProject = () => {
+    navigate('/projectthree');
+};
   
   const projects = [
     { id: 1, title: 'Platform for Outdoor Gear Company', categories: ['E-commerce', 'Logistics'] },
@@ -16,7 +21,7 @@ const ProjectTwo = () => {
     { id: 4, title: 'Online Learning Platform', categories: ['E-commerce','Others'] },
     { id: 5, title: 'Miscellaneous Project', categories: ['E-commerce', 'EdTech'] },
     { id: 6, title: 'All Data Project', categories: ['E-commerce', 'CRM'] },
-      ];
+   ];
   
 
 const filteredProjects = projects.filter(project => project.categories.includes(activeSelector));
@@ -63,8 +68,9 @@ const filteredProjects = projects.filter(project => project.categories.includes(
                     <div className="project-card" key={project.id}>
                         <div className="white"></div>
                         <div className="projectk-content">
-                            <h3>{project.title}</h3>
-                            <button>View Project</button>
+                      <h3>{project.title}</h3>
+                     
+                            <button onClick={handleViewProject}>View Project</button> 
                         </div>
                     </div>
                 ))}

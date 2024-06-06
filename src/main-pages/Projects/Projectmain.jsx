@@ -6,7 +6,7 @@ const Projectmain = () => {
   return (
       <>
       <ProjectOne />
-      <ProjectTwo/>
+      <ProjectTwo />
       </>
   )
 }

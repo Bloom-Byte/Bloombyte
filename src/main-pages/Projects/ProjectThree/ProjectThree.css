@@ -1,0 +1,189 @@
+.projectree-wall{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: #01080F;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   padding-bottom: 55rem;
+}
+
+.projectree-top{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+gap: 1rem;
+}
+
+.projectree-top button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+background-color: #067EF6;
+width: 3rem;
+height: 2.8rem;
+border-radius: 1rem;
+transition: .3s ease-in-out;
+cursor: pointer;
+margin-right: 1rem;
+color: white;
+transition: .3s ease-in-out;
+}
+
+.projectree-top button:hover{
+   transform: scale(1.1);
+}
+
+
+.projectree-top p{
+   font-size: 1.25rem;
+}
+.projectree-top p span{
+   color: grey;
+}
+.top-btn{
+   display: flex;
+   margin-left: 12rem;
+}
+.top-btn button{
+   background-color: #067EF6;
+   color: white;
+  border-radius: 2rem;
+   height: 3rem;
+   width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   gap: 0.5rem;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+}
+
+.top-btn button:hover{
+   transform: scale(1.1);
+}
+
+.terraboxz-wall{
+   padding-top: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.terrabox{
+   width: 52rem;
+   height: 20rem;
+   border-radius: 2rem;
+   background-color: white;
+}
+
+/* Invincible box put the green box in the middle */
+.giantbox{
+   display: flex;
+   justify-content: center;
+  }
+
+  /* The green box  */
+.giantbox-wall{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   gap: 3rem;
+   background-color: black;
+   width: 68rem;
+   overflow: hidden;
+}
+
+/* The container of the two lines */
+.line{
+   display: flex;
+   flex-direction: column;
+}
+
+/* The lines themselves */
+.line hr{ border: none;
+   border-left: 0.1px solid grey; /* Thickness and color of the vertical line */
+   height: 60px; /* Height of the vertical line */
+   margin: 20px; /* Margin to position the line */
+
+}
+.line2{
+   position: relative;
+   
+}
+.line2 hr{ border: none;
+   position: absolute;
+   right: -30rem;
+   top:-1.3rem ;
+   border-top: 0.1px solid grey; 
+    width: 100rem; 
+    margin: 20px;
+}
+
+/* The container for each data words */
+.giantbox-one{
+   display: flex;
+   flex-direction: column;
+   gap: 3.8rem;
+}
+
+/* The data words heading */
+.giantbox-one h3{
+   color: #067EF6;
+}
+
+
+@media screen and (max-width: 1200px) {
+.giantbox-wall{
+   gap: 1rem;
+}
+.terrabox{
+   width: 30rem;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+   .projectree-top{
+flex-direction: column;
+   }
+   .projectree-top p{
+      text-align: center;
+   }
+   .top-btn{
+      margin-left: 0rem;
+   }
+
+.giantbox-one{
+   padding: 1rem;
+}
+   .giantbox-one div h3{
+      font-size: 0.7rem;
+      white-space: nowrap;
+   }
+
+   .giantbox-one div p{
+      font-size: 0.6rem;
+   }
+   
+   
+.terrabox{
+   width: 20rem;
+   height: 15rem;
+}
+.terraboxz-wall{
+   padding-top: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.line hr{ 
+   height: 73px; 
+
+}
+
+   }
