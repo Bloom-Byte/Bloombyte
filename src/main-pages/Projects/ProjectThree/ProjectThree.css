@@ -8,7 +8,7 @@
    display: flex;
    flex-direction: column;
    gap: 3rem;
-   padding-bottom: 55rem;
+   padding-bottom: 120rem;
 }
 
 .projectree-top{
@@ -18,6 +18,9 @@
 gap: 1rem;
 }
 
+.arrowt{
+   font-size: 1.5rem;
+}
 .projectree-top button{
    display: flex;
    justify-content: center;
@@ -94,8 +97,9 @@ align-items: center;
    flex-direction: row;
    gap: 3rem;
    background-color: black;
-   width: 68rem;
+   width: 58rem;
    overflow: hidden;
+   line-height: 1.4rem;
 }
 
 /* The container of the two lines */
@@ -136,10 +140,45 @@ align-items: center;
    color: #067EF6;
 }
 
+/* the rest */
 
+.topic-box{
+   display: flex;
+   justify-content: center;
+margin-top: -3rem;
+}
+.topic-wall{
+   display: flex;
+justify-content: center;
+background-color: black;
+width: 58rem;
+overflow: hidden;
+flex-direction: column;
+border-top: 1px solid  grey;
+padding-top: 3rem;
+padding-left: 5rem;
+padding-right: 1rem;
+padding-bottom: 2rem;
+line-height: 1.4rem;
+}
+.topic-wall h3{
+ color: #067EF6;
+}
+.topic-wall p{
+   display: flex;
+   flex-direction: column;
+   font-size: 0.9rem;
+}
+
+
+
+/*Media Query*/
 @media screen and (max-width: 1200px) {
 .giantbox-wall{
    gap: 1rem;
+}
+.topic-wall{
+  padding-left: 1.6rem;
 }
 .terrabox{
    width: 30rem;
@@ -154,12 +193,16 @@ flex-direction: column;
    .projectree-top p{
       text-align: center;
    }
+   .giantbox-wall{
+ line-height: normal;
+   }
    .top-btn{
       margin-left: 0rem;
    }
 
 .giantbox-one{
    padding: 1rem;
+   line-height: 0.9rem;
 }
    .giantbox-one div h3{
       font-size: 0.7rem;
@@ -168,8 +211,21 @@ flex-direction: column;
 
    .giantbox-one div p{
       font-size: 0.6rem;
+    }
+   .topic-wall{
+      padding-left: 1rem;
+      line-height: 1.1rem;
+
    }
-   
+   .topic-wall h3{
+      font-size: 0.7rem;
+      white-space: nowrap;
+   }
+   .topic-wall p{
+      font-size: 0.6rem;
+
+  
+   }
    
 .terrabox{
    width: 20rem;
@@ -187,3 +243,8 @@ align-items: center;
 }
 
    }
+
+   
+
+  
+  
