@@ -42,7 +42,7 @@ padding-right: 4.2rem;
 .Abtfive-smallbx{
     height: 5rem;
     width: 12.5rem;
-    background-color: white;
+    background-color: #D9D9D9;
 }
 
 @media screen and (max-width: 1200px) {

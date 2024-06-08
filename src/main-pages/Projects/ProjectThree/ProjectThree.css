@@ -8,7 +8,7 @@
    display: flex;
    flex-direction: column;
    gap: 3rem;
-   padding-bottom: 120rem;
+   padding-bottom: 151rem;
 }
 
 .projectree-top{
@@ -80,7 +80,8 @@ align-items: center;
    width: 52rem;
    height: 20rem;
    border-radius: 2rem;
-   background-color: white;
+   background: #D2D2D5;
+
 }
 
 /* Invincible box put the green box in the middle */
@@ -170,7 +171,68 @@ line-height: 1.4rem;
    font-size: 0.9rem;
 }
 
+.projectree-box{
+  display: flex;
+  justify-content: center;
+margin-top: -3rem;
+}
 
+.slider-x{
+   background-color: black;
+   padding-left: 0.8rem;
+   padding-right: 0.8rem;
+   width: 58rem;
+   padding-top: 1rem;
+   padding-bottom: 3rem;
+overflow: hidden;
+}
+.slick-prev{
+   margin-left: 4rem;
+   background-color: #525354 !important;
+   height: 2rem;
+   width: 2rem;
+    border-radius: 2rem;
+    z-index: 99;
+  color: white;
+ }
+
+.slick-next {
+   margin-right: 4rem;
+   background-color: #525354 !important;
+   height: 2rem;
+   width: 2rem;
+    border-radius: 2rem;
+    transition: .3s ease-in-out;
+}
+
+
+
+
+.projectree-boxy1{
+   background: #D2D2D5;
+
+   height: 16rem;
+   border-radius: 2rem;
+}
+
+.slick-slide div{
+    margin: 0 0.3rem;
+ 
+}      
+.boxy-heading{
+   display: flex;
+   justify-content: center;
+margin-top: -3rem;
+}
+ .boxy-heading h3{
+   background-color: black;
+   width: 58rem;
+   padding-top: 3rem;
+   color: #067EF6;
+   padding-left: 5rem;
+   border-top: 1px solid  grey;
+
+ }
 
 /*Media Query*/
 @media screen and (max-width: 1200px) {
@@ -183,10 +245,20 @@ line-height: 1.4rem;
 .terrabox{
    width: 30rem;
 }
+.boxy-heading h3{
+   padding-left: 1.6rem;
+}
 
 }
 
 @media screen and (max-width: 700px) {
+   .boxy-heading h3{
+      font-size: 1rem;
+   }
+   .projectree-boxy1{
+      height: 10rem;
+
+   }
    .projectree-top{
 flex-direction: column;
    }
@@ -199,6 +271,10 @@ flex-direction: column;
    .top-btn{
       margin-left: 0rem;
    }
+
+.slick-prev, .slick-next{
+   top: 38%;
+}
 
 .giantbox-one{
    padding: 1rem;
@@ -245,6 +321,7 @@ align-items: center;
  
    gap: 6rem;
 }
+
 
    }
 
