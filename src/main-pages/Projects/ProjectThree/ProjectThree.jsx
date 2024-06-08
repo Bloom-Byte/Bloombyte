@@ -46,7 +46,7 @@ const ProjectThree = () => {
           <div className="line2">
             <hr />
           </div>
-                      <div className="giantbox-one">
+                      <div className="giantbox-one erroz">
             <div>
             <h3>Project Start Date</h3>
             <p>January 1, 2022</p>

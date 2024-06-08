@@ -241,9 +241,19 @@ align-items: center;
    height: 73px; 
 
 }
+.erroz{
+ 
+   gap: 6rem;
+}
 
    }
 
+   @media screen and (max-width: 340px) {
+      .erroz{
+ 
+         gap: 7rem;
+      }
+   }
    
 
   
