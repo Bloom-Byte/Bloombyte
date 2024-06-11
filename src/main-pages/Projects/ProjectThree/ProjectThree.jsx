@@ -6,6 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import More from './More/More'
 
 const ProjectThree = () => {
 
@@ -183,7 +184,23 @@ const ProjectThree = () => {
           
           </div>
           </Slider>
-       </div>
+      </div>
+      <div className="topic-box">
+      <div className="topic-wall">
+          <h3>Client Testimonial</h3>
+          <p>The fleet management solution developed by Bytechain has revolutionized our operations. We've seen a 20% improvement in route optimization, leading to significant fuel cost savings and improved customer satisfaction. Their team's expertise and commitment to our project were truly exceptional." - John Doe, CTO, Global Logistics Inc.</p>
+    </div>
+      </div>
+      <div className="ring-start">
+        <div className="ring-wall">
+          <div className="ring-box"></div>
+          <div className="line3">
+            <hr />
+          </div>
+           
+</div>
+      </div>
+      <More/>
     </section>
 
     )

@@ -1,0 +1,66 @@
+.move{
+    background-color: black;
+}
+
+.move-heading{
+    display: flex;
+    justify-content: start;
+    padding-left: 9rem;
+}
+
+.move-heading h1{
+    font-size: 1.7rem;
+    color: #067EF6;
+    font-family: 'Monda-Regular', sans-serif;
+
+}
+
+
+.project-cards{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    min-height: 50vh;
+    }
+    
+    .project-card{
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        width: 28rem;
+       overflow: hidden;
+    }
+
+    
+@media screen and (max-width: 1200px) {
+    
+    
+.move-heading{
+    display: flex;
+    justify-content: center;
+    padding-left: 0rem;
+}
+
+    .projectk-content h3{
+ font-size: 1rem;
+    }
+    .project-cards{
+        padding-top: 4rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .project-card{
+        width: 23rem;
+    }
+   }
+
+    @media screen and (max-width: 700px) {
+        .projectk-content h3{
+            font-size: 0.9rem;
+               }
+        .project-card{
+            width: 19rem;
+        }
+    }    
