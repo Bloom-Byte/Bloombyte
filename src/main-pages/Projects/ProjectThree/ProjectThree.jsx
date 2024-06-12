@@ -7,6 +7,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import More from './More/More'
+import Homefooter from '../../Home/./HomeFooter/HomeFooter'
+import HomeFooter from '../../Home/./HomeFooter/HomeFooter';
 
 const ProjectThree = () => {
 
@@ -200,7 +202,8 @@ const ProjectThree = () => {
            
 </div>
       </div>
-      <More/>
+      <More />
+      <HomeFooter/>
     </section>
 
     )
