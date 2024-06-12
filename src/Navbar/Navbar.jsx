@@ -77,7 +77,7 @@ const Navbar = () => {
       >Services</Link>
         <Link to='./projects'  className={`link ${activeButton === 'Projects' ? 'active' : ''}`}
             onClick={() => handleButtonClick('Projects')}>Projects</Link>
-        <Link href="#"  className={`link ${activeButton === 'Careers' ? 'active' : ''}`}
+        <Link to='/careers'    className={`link ${activeButton === 'Careers' ? 'active' : ''}`}
             onClick={() => handleButtonClick('Careers')}
        >Careers</Link>
         <Link href="#" className={`link ${activeButton === 'Blog' ? 'active' : ''}`}
@@ -94,7 +94,8 @@ const Navbar = () => {
           <Link to='/'  className={`link ${activeButton === 'Home' ? 'active' : ''}`} onClick={closeMenu}>Home</Link>
           <Link to='/about' className={`link ${activeButton === 'About Us' ? 'active' : ''}`} onClick={closeMenu}>About</Link>
           <Link to='/services' className={`link ${activeButton === 'Services' ? 'active' : ''}`} onClick={closeMenu}>Services</Link>
-          <Link to='./projects'  className={`link ${activeButton === 'Projects' ? 'active' : ''}`} onClick={closeMenu}>Project</Link>
+          <Link to='./projects' className={`link ${activeButton === 'Projects' ? 'active' : ''}`} onClick={closeMenu}>Project</Link>
+          <Link to='/careers'  className={`link ${activeButton === 'Careers' ? 'active' : ''}`} onClick={closeMenu}>Careers</Link>
           <Link href="#"  className={`link ${activeButton === 'Blog' ? 'active' : ''}`} onClick={closeMenu}>Blog</Link>
           <Link href="#"  className={`link ${activeButton === 'Contact' ? 'active' : ''}`} onClick={closeMenu}>Contact</Link>
 
