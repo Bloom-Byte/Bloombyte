@@ -1,6 +1,6 @@
 .move{
-    background-color: black;
-}
+    margin-bottom: -8rem;
+   }
 
 .move-heading{
     display: flex;
@@ -52,7 +52,7 @@
     }
     
     .project-card{
-        width: 20rem;
+        width: 19rem;
     }
    }
 

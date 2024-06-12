@@ -8,7 +8,7 @@
    display: flex;
    flex-direction: column;
    gap: 3rem;
-   padding-bottom: 179.3rem;
+   padding-bottom: 180rem;
    
 }
 
@@ -376,12 +376,12 @@ align-items: center;
    width: 14rem;
    }
 .projectree-wall{
-   padding-bottom: 173rem;
+   padding-bottom: 163rem;
 }
 
    }
 
-   @media screen and (max-width: 340px) {
+   @media screen and (max-width: 360px) {
       .erroz{
  
          gap: 7rem;
@@ -392,6 +392,9 @@ align-items: center;
          width: 13rem;
          }
       
+.projectree-wall{
+   padding-bottom: 172rem;
+}
    }
    
 
