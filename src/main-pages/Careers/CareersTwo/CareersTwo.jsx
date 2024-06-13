@@ -28,7 +28,7 @@ const CareersTwo = () => {
     document.activeElement.blur();
      // Scroll down smoothly
      window.scrollTo({
-      top: window.scrollY + 150, // Adjust the scroll amount as needed
+      top: window.scrollY + 400, // Adjust the scroll amount as needed
       behavior: 'smooth'
     });
   };
