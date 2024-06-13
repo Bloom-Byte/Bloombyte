@@ -26,6 +26,11 @@ const CareersTwo = () => {
     setFilteredJobs(filtered);
     // Blur the input field to hide the keyboard
     document.activeElement.blur();
+     // Scroll down smoothly
+     window.scrollTo({
+      top: window.scrollY + 150, // Adjust the scroll amount as needed
+      behavior: 'smooth'
+    });
   };
 
   const handleKeyDown = (event) => {
