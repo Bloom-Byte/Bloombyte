@@ -53,7 +53,114 @@ justify-content: center;
     color: white;
 
     border-radius: 2rem;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
   }
+
+  .search-container button:hover{
+    transform: scale(1.1);
+  }
+
+  .careertwo-areabox{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+   
+  }
+.imagecard{
+    position: absolute;
+ right: 0px;
+ top: 4rem;
+ left: 12rem;
+ width: 13rem;
+ bottom: 0px;
+    
+    height: 11rem;
+  
+  
+}
+
+.careertwo-areabox1{
+    position: relative;
+    overflow: hidden;
+    background: #052A49;
+    border-radius: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    gap: 1.5rem;
+    width: 25rem;
+    height: 15rem;
+    padding: 0rem 2rem;
+    
+}
+
+.xspecial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+z-index: 2;
+    gap: 0.4rem;
+}
+
+.xspecial h3{
+    font-weight: 100;
+}
+.xspecial p{
+   
+}
+
+.careertwo-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding-right: 3rem;
+}
+
+.careertwo-btns button{
+    width: 4.3rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: #052A49;
+    color: white;
+}
+
+.apply{
+    display: flex;
+    justify-content: center;
+    padding-right: 15rem;
+}
+.apply button{
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    border-radius: 2rem;
+    background-color:white;
+    color:black;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 1px solid black;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.apply button:hover{
+    transform: scale(1.1);
+}
+
+.arrow-icon{
+    font-size: 0.9rem;
+}
+  /* Media Query Bitch*/
 
   
 @media screen and (max-width: 1200px) {
@@ -65,6 +172,31 @@ justify-content: center;
 .input-wrapper input{
     width: 39rem;
     }
+
+    .careertwo-btns{
+        gap: 1.4rem;
+    }
+    .apply{
+        padding-right: 12rem;
+    }
+.xspecial p{
+   font-size: 0.9rem;
+}
+.careertwo-areabox{
+           
+    gap: 1rem;
+  }
+
+.careertwo-areabox1{
+    width: 22rem;
+}
+
+.imagecard{
+ left: 11rem;
+ top: 5rem;
+ height: 10rem;
+ width: 11rem;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -76,11 +208,49 @@ justify-content: center;
             justify-content: center;
             font-size: 1.6rem;
         }
-     
+        
+ 
+      
+.careertwo-areabox{
+           
+    gap: 2rem;
+  }
+  
+        
+.imagecard{
+    left: 10rem;
+    top: 4.4rem;
+    height: 10.5rem;
+   }
+
 }
 
 @media screen and (max-width: 320px) {
     .search-container{
         gap: 0.3rem;
     }
+    
+.careertwo-areabox1{
+    width: 19rem;
+}
+
+.apply{
+    padding-right: 9rem;
+}
+
+.careertwo-btns{
+    gap: 0.7rem;
+    padding-right: 1rem;
+}
+
+
+.careertwo-btns button{
+    font-size: 0.7rem;
+}
+
+       
+.imagecard{
+    left: 8rem;
+     
+   }
  }
