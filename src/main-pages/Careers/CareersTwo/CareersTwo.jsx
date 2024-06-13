@@ -24,6 +24,8 @@ const CareersTwo = () => {
       job.salary.toLowerCase().replace(/[\s\-\/]/g, '').includes(formattedSearchTerm)
     );
     setFilteredJobs(filtered);
+    // Blur the input field to hide the keyboard
+    document.activeElement.blur();
   };
 
   const handleKeyDown = (event) => {
