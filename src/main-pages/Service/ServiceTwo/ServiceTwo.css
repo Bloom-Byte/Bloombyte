@@ -7,8 +7,10 @@ flex-direction: column;
 
 .ServiceTwo h1{
     font-size: clamp(1.5rem, 4vw, 2rem);
-    padding-left: 2.8rem;
+    padding-right: 55rem;
     color: #067EF6;
+    display: flex;
+    justify-content: center;
 }
 
 .sevtwo-wall, .sevtwo-wall2{
@@ -97,9 +99,18 @@ background-color: black;
         width: 42rem;
     }
    
+.ServiceTwo h1{
+    padding-right: 22rem;
+}
 }
 
 @media screen and (max-width: 600px) {
+   
+   
+.ServiceTwo h1{
+    padding-right: 0rem;
+}
+   
     .servtwo-box{
         height: 10rem;
       width: 10rem;

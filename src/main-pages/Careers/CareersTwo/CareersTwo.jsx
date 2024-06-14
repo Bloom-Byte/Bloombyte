@@ -26,9 +26,9 @@ const CareersTwo = () => {
     setFilteredJobs(filtered);
     // Blur the input field to hide the keyboard
     document.activeElement.blur();
-     // Scroll down smoothly
+    //  Scroll down smoothly
      window.scrollTo({
-      top: window.scrollY + 400, // Adjust the scroll amount as needed
+      top: window.scrollY + 350, // Adjust the scroll amount as needed
       behavior: 'smooth'
     });
   };
