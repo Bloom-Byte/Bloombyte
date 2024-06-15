@@ -8,6 +8,7 @@ import Servicemain from './main-pages/Service/Servicemain'
 import Projectmain from './main-pages/Projects/Projectmain'
 import ProjectThree from './main-pages/Projects/ProjectThree/ProjectThree'
 import Careersmain from './main-pages/Careers/Careersmain'
+import Careersthree from './main-pages/Careers/Careersthree/Careersthree'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/projects" element={<BackgroungImg backgroundClass="background1"><Projectmain /></BackgroungImg>} />
         <Route path="/projectthree" element={<BackgroungImg backgroundClass="background1"><ProjectThree /></BackgroungImg>} />
         <Route path="/careers" element={<BackgroungImg backgroundClass="background1"><Careersmain /></BackgroungImg>} />
+        <Route path="/careersthree" element={<BackgroungImg backgroundClass="background1"><Careersthree /></BackgroungImg>} />
        
       </Routes>
       <HomeFooter/>

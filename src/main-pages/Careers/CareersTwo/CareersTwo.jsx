@@ -4,12 +4,13 @@ import { IoSearchOutline } from "react-icons/io5";
 import { MdArrowOutward } from "react-icons/md";
 import jobPositions from './jobPositions';
 import IMAGECARD from './card.png'
+import { useNavigate } from 'react-router-dom';
 
 const CareersTwo = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredJobs, setFilteredJobs] = useState(jobPositions);
-
+  const navigate = useNavigate();
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -39,7 +40,9 @@ const CareersTwo = () => {
     }
   };
 
-
+  const handleViewCareers = () => {
+    navigate('/careersthree');
+};
   return (
       <div className='careertwo'>
           <div className="careertwo-heading"><h1>Open Positions</h1></div>
@@ -67,7 +70,7 @@ const CareersTwo = () => {
             <p>{job.description}</p>
           </div>
           <div className="apply">
-          <button>Apply <MdArrowOutward className='arrow-icon'/> </button>
+          <button onClick={handleViewCareers}>Apply <MdArrowOutward className='arrow-icon'/> </button>
           </div>
         </div>
         ))}
