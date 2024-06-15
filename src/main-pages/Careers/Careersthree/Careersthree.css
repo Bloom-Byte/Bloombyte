@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-bottom: 80rem;
+    padding-bottom: 67rem;
 }
 
 .careertree-top{
@@ -154,8 +154,11 @@
  @media screen and (max-width: 1200px) {
     .careerbox-wall{
        gap: 1rem;
-    }
-
+       }
+.careerthree-wall{
+ 
+   padding-bottom: 70rem;
+}
     
 .careerbox-one h3{
    
@@ -175,7 +178,8 @@
             margin-left: 0rem;
          }
          .careerthree-wall{
-           
+          
+            padding-bottom: 75rem;
          }
 
          .linez hr{ 
@@ -222,6 +226,7 @@
      }
    
         .careerthree-wall{
- 
+       
+         padding-bottom: 82rem;
 }
  }

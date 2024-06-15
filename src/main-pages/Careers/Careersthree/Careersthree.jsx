@@ -2,7 +2,8 @@ import React from 'react'
 import './Careersthree.css'
 import { HiMiniArrowSmallLeft } from "react-icons/hi2";
 import { MdArrowOutward } from "react-icons/md";
-
+import JOBS from '../jobs/jobs'
+import Homefooter from '../../Home/HomeFooter/HomeFooter'
 const Careersthree = () => {
     const handleBackClick = () => {
         navigate(-1); 
@@ -90,6 +91,8 @@ const Careersthree = () => {
            
 </div>
       </div>
+      <JOBS />
+      <Homefooter/>
     </section>
   )
 }

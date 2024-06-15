@@ -1,0 +1,210 @@
+.move2{
+    margin-bottom: -8rem;
+   }
+
+.move-heading2{
+    display: flex;
+    justify-content: center;
+    padding-right: 38rem;
+}
+
+.move-heading2 h1{
+    font-size: 1.7rem;
+    color: #067EF6;
+    font-family: 'Monda-Regular', sans-serif;
+
+}
+.careertwo-areabox2{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+   
+  }
+.imagecard2{
+    position: absolute;
+ right: 0px;
+ top: 4rem;
+ left: 12rem;
+ width: 13rem;
+ bottom: 0px;
+    
+    height: 11rem;
+  
+  
+}
+
+.careertwo-areabox12{
+    position: relative;
+    overflow: hidden;
+    background: #052A49;
+    border-radius: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+    gap: 1.5rem;
+    width: 25rem;
+    height: 15rem;
+    padding: 0rem 2rem;
+    
+}
+
+.xspecial2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+z-index: 2;
+    gap: 0.4rem;
+}
+
+.xspecial2 h3{
+    font-weight: 100;
+}
+.xspecial2 p{
+   
+}
+
+.careertwo-btns2{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding-right: 3rem;
+}
+
+.careertwo-btns2 button{
+    width: 4.3rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    background-color: #052A49;
+    color: white;
+}
+
+.apply2{
+    display: flex;
+    justify-content: center;
+    padding-right: 15rem;
+}
+.apply2 button{
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    border-radius: 2rem;
+    background-color:white;
+    color:black;
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 1px solid black;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.apply2 button:hover{
+    transform: scale(1.1);
+}
+
+.arrow-icon2{
+    font-size: 0.9rem;
+}
+@media screen and (max-width: 1200px) {
+    
+    
+    .move-heading2{
+       
+        padding-right: 0rem;
+    }
+    .careertwo-btns2{
+        gap: 1.4rem;
+    }
+    .apply2{
+        padding-right: 12rem;
+    }
+.xspecial2 p{
+   font-size: 0.9rem;
+}
+.careertwo-areabox2{
+           
+    gap: 1rem;
+  }
+
+.careertwo-areabox12{
+    width: 20rem;
+}
+
+.imagecard2{
+ left: 9.5rem;
+ top: 5rem;
+ height: 10rem;
+ width: 11rem;
+}
+}    
+
+@media screen and (max-width: 700px) {
+   
+        .careertwo-heading2 h1{
+            display: flex;
+            justify-content: center;
+            font-size: 1.6rem;
+        }
+        
+ 
+      
+.careertwo-areabox2{
+           
+    gap: 2rem;
+  }
+  
+.careertwo-btns2{
+ 
+    padding-right: 1rem;
+}
+
+
+.careertwo-btns2 button{
+    font-size: 0.7rem;
+}
+
+.apply2{
+    padding-right: 10.9rem;
+}
+        
+.imagecard2{
+    left: 10rem;
+    top: 4.4rem;
+    height: 10.5rem;
+   }
+
+}
+
+@media screen and (max-width: 320px) {
+   
+.careertwo-areabox12{
+    width: 19rem;
+}
+
+.apply2{
+    padding-right: 8rem;
+}
+
+.careertwo-btns2{
+    gap: 0.7rem;
+    padding-right: 0rem;
+}
+
+
+.careertwo-btns2 button{
+    font-size: 0.7rem;
+}
+
+       
+.imagecard2{
+    left: 8rem;
+     
+   }
+ }
