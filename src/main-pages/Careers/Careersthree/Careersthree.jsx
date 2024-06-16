@@ -4,7 +4,10 @@ import { HiMiniArrowSmallLeft } from "react-icons/hi2";
 import { MdArrowOutward } from "react-icons/md";
 import JOBS from '../jobs/jobs'
 import Homefooter from '../../Home/HomeFooter/HomeFooter'
+import { useNavigate } from 'react-router-dom';
 const Careersthree = () => {
+  const navigate = useNavigate();
+
     const handleBackClick = () => {
         navigate(-1); 
       };
