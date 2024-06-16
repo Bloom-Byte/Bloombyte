@@ -70,6 +70,8 @@ transition: .1s ease-in-out;
         z-index: 100;
         transform: translateX(-100%);
         transition: all .45s;
+        /* Recently Added */
+        overflow: scroll;
     }
     .body-no-scroll {
         overflow: hidden;
