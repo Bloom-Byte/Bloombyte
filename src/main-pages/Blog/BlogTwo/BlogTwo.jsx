@@ -3,8 +3,14 @@ import './BlogTwo.css'
 import { MdArrowOutward } from "react-icons/md";
 import blogData from './blogData';
 import IMAGECARD from './card.png'
+import { useNavigate } from 'react-router-dom';
 
 const BlogTwo = () => {
+  const navigate = useNavigate();
+
+  const handleViewCareers = () => {
+    navigate('/blogthree');
+};
   return (
       <section className='blogtwo'>
           <div className="blogtwo-heading">
@@ -18,7 +24,7 @@ const BlogTwo = () => {
                   <p>{blog.content}</p>
                   <span>{blog.date}</span>
                   <div className="read-btn">
-                  <button>Read <MdArrowOutward/></button>    
+                  <button onClick={handleViewCareers}>Read <MdArrowOutward/></button>    
                   </div>
                   
               </div>
