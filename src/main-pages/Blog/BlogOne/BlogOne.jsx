@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoArrowDownCircleOutline } from "react-icons/io5";
 const BlogOne = () => {
 
-  const scrollToServices = () => {
+  const scrollToBlogPost = () => {
 
     const scrollDistance = 840;
 
@@ -15,6 +15,7 @@ const BlogOne = () => {
       behavior: 'smooth',
     });
   };
+
 
   var settings = {
     infinite: true,
@@ -79,7 +80,7 @@ const BlogOne = () => {
               </div>
           </Slider>
           <div className="blog-btn">
-              <button>Blog Post <IoArrowDownCircleOutline
+              <button onClick={scrollToBlogPost}>Blog Post <IoArrowDownCircleOutline
               className='career-downicon'/></button>
           </div>
 </section>

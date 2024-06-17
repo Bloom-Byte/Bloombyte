@@ -1,0 +1,149 @@
+.blogtwo{
+    background: #01080F;
+display: flex;
+flex-direction: column;
+gap: 3rem;
+}
+
+.blogtwo-heading h1{
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    padding-right: 55rem;
+    color: #067EF6;
+    display: flex;
+    justify-content: center;
+    font-family: 'Monda-Regular', sans-serif;
+
+}
+
+.blogtwo-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.blogtwo-boxone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 19rem;
+    width: 24rem;
+    background: #052A49;
+gap: 1rem;
+border-radius: 1.5rem;
+position: relative;
+overflow: hidden;
+}
+
+.imagecard2{
+    position: absolute;
+    right: 0px;
+    top: 9rem;
+    left: 12rem;
+    width: 12rem;
+    bottom: 0px;
+       
+       height: 10rem;
+     
+}
+
+.blogtwo-boxone p{
+  
+    display: flex;
+    flex-wrap: wrap;
+padding: 0 1.8rem;
+}
+
+.blogtwo-boxone span{
+font-size: smaller;
+font-weight: 300;
+margin-right: 15rem;
+font-family: 'Inter'; 
+}
+
+.white-phonex{
+    width: 21rem;
+    border-radius: 1rem;
+    height: 7rem;
+    background: #D9D9D9;
+z-index: 11;
+}
+
+.read-btn{
+    display:flex ;
+    justify-content: center;
+    padding-right: 15rem;
+}
+
+.read-btn button{
+    font-weight: 600;
+   width: 5.5rem;
+   height: 2rem;
+   border-radius: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   border: 1px solid black;
+   transition: .3s ease-in-out;
+   cursor: pointer;
+}
+
+.read-btn button:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .blogtwo-heading h1{
+    padding-right: 0;
+    }
+
+    .blogtwo-boxone{
+        width: 20rem;
+    }
+    .white-phonex{
+        width: 16rem;
+        height: 6rem;
+    }
+  
+    .blogtwo-boxone p{
+        padding: 0 2.4rem;
+    font-size: 0.9rem;
+    }
+    .blogtwo-boxone span{
+        margin-right: 10rem;
+        }
+        .read-btn{
+            padding-right: 10rem;
+        }
+        .imagecard2{
+         
+            top: 9.7rem;
+            left: 10rem;
+width: 10rem;        
+
+               height: 9rem;
+             
+        }
+        
+}
+
+@media screen and (max-width: 700px) {
+    .imagecard2{    
+        top: 9.9rem;   
+       width: 10.3rem;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    .imagecard2{       
+        left: 8.5rem;
+    }
+    .blogtwo-boxone p{
+        padding: 0 1.9rem;
+    font-size: 0.9rem;
+    }
+}

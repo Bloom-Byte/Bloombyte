@@ -8,6 +8,18 @@ import { IoArrowDownCircleOutline } from "react-icons/io5";
 
 const CareersOne = () => {
 
+  const scrollToCareer = () => {
+
+    const scrollDistance = 840;
+
+    window.scrollTo({
+      top: scrollDistance,
+      behavior: 'smooth',
+    });
+  };
+
+
+
   var settings = {
     infinite: true,
       speed: 500,
@@ -72,7 +84,7 @@ const CareersOne = () => {
               </div>
           </Slider>
           <div className="careerone-btn">
-              <button>Open Positions <IoArrowDownCircleOutline
+              <button onClick={scrollToCareer}>Open Positions <IoArrowDownCircleOutline
               className='career-downicon'/></button>
           </div>
     </section>
