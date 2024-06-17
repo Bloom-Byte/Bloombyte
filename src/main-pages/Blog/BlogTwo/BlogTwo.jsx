@@ -12,7 +12,7 @@ const BlogTwo = () => {
           </div>
           <div className="blogtwo-box">
               {blogData.map((blog) => (<div key={blog.id} className="blogtwo-boxone">
-                <img src={IMAGECARD} alt=""  className='imagecard2'/>
+                <img src={IMAGECARD} alt=""  className='imagecard3'/>
       
                   <div className="white-phonex"></div>
                   <p>{blog.content}</p>
