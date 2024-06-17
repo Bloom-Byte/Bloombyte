@@ -9,6 +9,7 @@ import Projectmain from './main-pages/Projects/Projectmain'
 import ProjectThree from './main-pages/Projects/ProjectThree/ProjectThree'
 import Careersmain from './main-pages/Careers/Careersmain'
 import Careersthree from './main-pages/Careers/Careersthree/Careersthree'
+import Blogmain from './main-pages/Blog/Blogmain'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/projectthree" element={<BackgroungImg backgroundClass="background1"><ProjectThree /></BackgroungImg>} />
         <Route path="/careers" element={<BackgroungImg backgroundClass="background1"><Careersmain /></BackgroungImg>} />
         <Route path="/careersthree" element={<BackgroungImg backgroundClass="background1"><Careersthree /></BackgroungImg>} />
+        <Route path="/blog" element={<BackgroungImg backgroundClass="background1"><Blogmain /></BackgroungImg>} />
        
       </Routes>
       <HomeFooter/>
