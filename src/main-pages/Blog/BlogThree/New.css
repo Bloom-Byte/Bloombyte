@@ -134,14 +134,16 @@ width: 10rem;
     .imagecard56{    
         top: 9.9rem;   
        width: 10.3rem;
+       
     }
   
 
 }
 
+
 @media screen and (max-width: 320px) {
     .imagecard56{       
-        left: 8.3rem;
+        left: 7.6rem;
     }
     .blogtwo-boxone2 p{
         padding: 0 1.9rem;
