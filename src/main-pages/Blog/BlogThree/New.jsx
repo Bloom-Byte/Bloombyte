@@ -11,7 +11,7 @@ const New = () => {
     </div>
     <div className="blogtwo-box2">
         {newsData.map((news) => (<div key={news.id} className="blogtwo-boxone2">
-          <img src={IMAGECARD} alt=""  className='imagecard4'/>
+          <img src={IMAGECARD} alt=""  className='imagecard56'/>
 
             <div className="white-phonex2"></div>
             <p>{news.content}</p>

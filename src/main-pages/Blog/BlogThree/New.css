@@ -36,7 +36,7 @@ position: relative;
 overflow: hidden;
 }
 
-.imagecard4{
+.imagecard56{
     position: absolute;
     right: 0px;
     top: 9rem;
@@ -118,7 +118,7 @@ z-index: 11;
         .read-btn2{
             padding-right: 10rem;
         }
-        .imagecard4{
+        .imagecard56{
          
             top: 9.7rem;
             left: 10rem;
@@ -131,7 +131,7 @@ width: 10rem;
 }
 
 @media screen and (max-width: 700px) {
-    .imagecard4{    
+    .imagecard56{    
         top: 9.9rem;   
        width: 10.3rem;
     }
@@ -140,8 +140,8 @@ width: 10rem;
 }
 
 @media screen and (max-width: 320px) {
-    .imagecard4{       
-        left: 8.5rem;
+    .imagecard56{       
+        left: 8.3rem;
     }
     .blogtwo-boxone2 p{
         padding: 0 1.9rem;
