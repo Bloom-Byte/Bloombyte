@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-bottom: 67rem;
+    padding-bottom: 120rem;
 }
 
 .blog-top1{
@@ -87,6 +87,90 @@ font-family: 'Inter';
 }
 
 
+.china{
+    display: flex;
+    justify-content: center;
+}
+
+.china-wall{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 58rem;
+    overflow: hidden;
+    flex-direction: column;
+  
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    line-height: 1.4rem;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.china-wall p{
+    font-family: 'Inter'; 
+font-size: 1.1rem;
+}
+
+.line4{
+    position: relative;
+    
+ }
+ .line4 hr{ border: none;
+    position: absolute;
+    right: -30rem;
+    top:-3rem ;
+    border-top: 0.1px solid grey; 
+     width: 100rem; 
+     margin: 20px;
+ }
+
+ .line5{
+    position: relative;
+    
+ }
+ .line5 hr{ border: none;
+    position: absolute;
+    right: -30rem;
+    top:-1rem ;
+    border-top: 0.1px solid grey; 
+     width: 100rem; 
+     margin: 20px;
+ }
+
+.share-btn{
+    display: flex;
+    justify-content: center;
+    padding-right: 47rem;
+}
+
+.share-btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ background-color: #067EF6;
+ width: 8rem;
+ height: 2.8rem;
+ border-radius: 1rem;
+ transition: .3s ease-in-out;
+ cursor: pointer;
+ margin-right: 1rem;
+ color: white;
+gap: 0.5rem;
+}
+
+.share-btn button:hover{
+    transform: scale(1.1);
+}
+
+.share-icon{
+    font-size: 1rem;
+}
+
+
+
   /*Media Query */
   @media screen and (max-width: 1200px) {
     .blog-top2 h2{
@@ -108,7 +192,18 @@ font-family: 'Inter';
     .blog-top1 p{
         font-size: 1rem;
     }
-
+.china-wall{
+    background-color: black;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    
+}
+    .china-wall p{
+font-size: 0.9rem;
+    }
+    .share-btn{
+        padding-right: 35rem;
+    }
     }
     
  @media screen and (max-width: 700px) {
@@ -131,6 +226,14 @@ font-family: 'Inter';
         .blog-top1 p{
             font-size: 0.8rem;
         }
+
+        .china-wall p{
+            font-size: 0.8rem;
+                }
+
+                .share-btn{
+                    padding-right: 0rem;
+                }
            }
  
 
