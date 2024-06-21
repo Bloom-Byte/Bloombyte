@@ -3,12 +3,14 @@ import './BlogThree.css'
 import { HiMiniArrowSmallLeft } from "react-icons/hi2";
 import { MdOutlineShare } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
+import Homefooter from '../../Home/HomeFooter/HomeFooter'
+import New from './New';
 const BlogThree = () => {
 
   const navigate = useNavigate();
 
   const handleBackClick = () => {
-      navigate(-1); 
+      navigate("/blog"); 
     };
 
     const handleShareClick = () => {
@@ -56,6 +58,8 @@ const BlogThree = () => {
       <div className="share-btn">
         <button onClick={handleShareClick}>Share Post <MdOutlineShare className='share-icon'/></button>
       </div>
+      <New />
+      <Homefooter/>
     </section>
   )
 }
