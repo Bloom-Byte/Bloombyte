@@ -11,6 +11,7 @@ import Careersmain from './main-pages/Careers/Careersmain'
 import Careersthree from './main-pages/Careers/Careersthree/Careersthree'
 import Blogmain from './main-pages/Blog/Blogmain'
 import BlogThree from './main-pages/Blog/BlogThree/BlogThree'
+import Contactmain from './main-pages/Contact/Contactmain'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/careersthree" element={<BackgroungImg backgroundClass="background1"><Careersthree /></BackgroungImg>} />
         <Route path="/blog" element={<BackgroungImg backgroundClass="background1"><Blogmain /></BackgroungImg>} />
         <Route path="/blogthree" element={<BackgroungImg backgroundClass="background1"><BlogThree /></BackgroungImg>} />
+        <Route path="/contact" element={<BackgroungImg backgroundClass="background1"><Contactmain /></BackgroungImg>} />
        
       </Routes>
       <HomeFooter/>

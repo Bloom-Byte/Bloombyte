@@ -26,8 +26,6 @@
 
 .Abtree-topic p{
     font-size:  clamp(0.8rem, 2vw, 1rem);
-    font-family: 'inter';
-
 padding-right: 4.2rem;
 }
 
@@ -51,8 +49,6 @@ gap: 0.5rem;
 .circle-content span{
     color: #067EF6;
     font-size: 0.8rem;
-    font-family: 'inter';
-
 }
 
 .cir{

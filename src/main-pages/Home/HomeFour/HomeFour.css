@@ -28,7 +28,6 @@
     display: flex;
     flex-wrap: wrap;
     font-size: clamp(0.7rem, 1.5vw, 1rem);
-    font-family: 'inter';
 }
 
 .mini-content{

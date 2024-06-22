@@ -20,7 +20,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    background: rgba(255, 255, 255, 0.5); 
+    background: rgba(255, 255, 255, 0.3); 
     width: clamp(53rem, 100%, 65rem);
 }
 

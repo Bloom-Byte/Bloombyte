@@ -27,7 +27,6 @@ gap: 8rem;
 
 .Abttwo-topic p{
     font-size:  clamp(0.8rem, 2vw, 1rem);
-    font-family: 'inter';
 text-align: center;
 padding-right: 4.2rem;
 }
@@ -50,13 +49,11 @@ padding-right: 4.2rem;
 }
 
 .abt-bx h4{
-    font-family: 'Inter';
     color: #067EF6;
 }
 
 .abt-bx p{
     font-size: 0.9rem;
-    font-family: 'Inter';
     display: flex;
     flex-wrap: wrap;
    

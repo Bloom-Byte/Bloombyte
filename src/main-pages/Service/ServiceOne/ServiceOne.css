@@ -22,7 +22,7 @@ text-align: center;
 
 .serviceone-topic p{
     font-size:  clamp(0.7rem, 2vw, 1.3rem);
-    font-family: 'Inter'; 
+     
     font-weight: 300; 
 text-align: center;
 }

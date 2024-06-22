@@ -24,7 +24,7 @@
 
 .Abtfour-topic p{
     font-size:  clamp(0.8rem, 2vw, 1rem);
-    font-family: 'inter';
+    
 
 padding-right: 4.2rem;
 }
@@ -49,8 +49,6 @@ padding-right: 4.2rem;
 .four-blue h4{
     font-size: 1.4rem;
     padding-right: 9rem;
-    font-family: 'inter';
-
 }
 .fivehun{
     display: flex;
@@ -62,16 +60,14 @@ padding-right: 4.2rem;
     justify-content: center;
     font-size: 1.4rem;
     color: #067EF6;
-    font-family: 'inter';
-
+  
 }
 .fivehun p{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     width: 17rem;
-    font-family: 'inter';
-
+ 
 }
 .ninetyf{
     display: flex;
@@ -84,16 +80,13 @@ padding-right: 4.2rem;
     text-align: center;
     font-size: 1.4rem;
     color: #067EF6;
-    font-family: 'inter';
-
 }
 .ninetyf  p{
     display: flex;
     text-align: center;
     flex-wrap: wrap;
     width: 17rem;
-    font-family: 'inter';
-
+  
 }
 
 @media screen and (max-width: 1200px) {

@@ -19,7 +19,7 @@ align-items: center;
  }
 
 .whitebar .roll{
-    font-family: 'Inter';
+    
   display: flex;
   gap: 7rem;
     white-space: nowrap;

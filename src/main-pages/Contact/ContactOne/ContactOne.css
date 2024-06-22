@@ -1,0 +1,159 @@
+.contactOne{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: -4rem;
+    margin-bottom: -4rem;
+}
+
+.contactOne-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+gap: 0.5rem;
+}
+
+.contactOne-details h1{
+    color: #067EF6;
+     font-family: 'Monda-Regular', sans-serif;
+font-size: 2.3rem;
+
+}
+
+.contactOne-details p{
+    flex-wrap: wrap;
+    display: flex;
+width: 35rem;
+line-height: 1.7rem;
+}
+
+.call{
+    display: flex;
+    gap: 1rem;
+    padding-top: 2.5rem;
+}
+
+.mail{
+    display: flex;
+    gap: 1rem;
+}
+.social-media{
+    display: flex;
+    gap: 2rem;
+    padding-top: 2.5rem;
+}
+
+.twitter, .instagram, .discord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1B1B1B;
+
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.twitter:hover, .instagram:hover, .discord:hover{
+transform: scale(1.1);
+}
+
+.contactOne-email{
+gap: 1.2rem;
+display: flex;
+flex-direction: column;
+}
+
+
+.contactOne-email button{
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 2rem;
+    background-color: #067EF6;
+    color: white;
+cursor: pointer;
+transition: .3s ease-in-out;
+}
+
+.contactOne-email button:hover{
+    transform: scale(1.1);
+}
+
+.name, .emaile, .message{
+    display: flex;
+    flex-direction: column;
+  gap: 0.3rem;
+}
+.name input, .emaile input{
+    width: 22rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    background: #052A49;
+    border-radius: 0.5rem;
+    color: #98A2B3;
+   }
+
+label{
+  font-size: 0.9rem;
+    color: #98A2B3;
+
+}
+#Message {
+    color: #98A2B3;
+    resize: none;
+}
+
+.message textarea{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background: #052A49;
+    border-radius: 0.5rem;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #052A49 inset !important;
+    -webkit-text-fill-color: #98A2B3 !important;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .contactOne{
+        margin-top: 0rem;
+    }
+
+.contactOne-details p{
+width: 20rem;
+font-size: 0.9rem;
+}
+
+.name input, .emaile input{
+    width: 17rem;
+    height: 2rem;
+}
+.message textarea{
+    width: 17rem;
+}
+
+.contactOne-details h1{
+font-size: 1.6rem;
+
+}
+}
+
+@media screen and (max-width: 700px) {
+    .contactOne{
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: -5rem;
+    }
+    
+.contactOne-details p{
+    width: 16.5rem;
+    font-size: 0.9rem;
+    }
+    
+}
