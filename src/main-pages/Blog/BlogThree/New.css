@@ -138,9 +138,17 @@ width: 10rem;
     }
     .blogtwo2{
         margin-bottom: -7rem;
+        background-color: black;
     }
 
 }
+
+@media screen and (max-width: 500px) {
+.blogtwo2{
+background-color:transparent ;
+}
+}
+
 @media screen and (max-width: 360px) {
     .imagecardnew{       
         left: 9rem;
