@@ -141,12 +141,12 @@ width: 10rem;
     }
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     .imagecardnew{       
-        left: 7rem;
+        left: 9rem;
     }
     .blogtwo-boxone2 p{
-        padding: 0 1.2rem;
+        padding: 0 1.7rem;
     font-size: 0.9rem;
     }
 }

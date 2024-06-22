@@ -254,7 +254,9 @@ font-size: 0.9rem;
         font-size: 1.2rem;
            }
           
-          
+           .blogthree-wall{
+            padding-bottom: 127rem;
+               }
  }
 
  @media screen and (max-width: 320px) {
