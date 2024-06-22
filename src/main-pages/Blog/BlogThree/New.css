@@ -1,4 +1,5 @@
 .blogtwo2{
+    background:transparent;
 display: flex;
 flex-direction: column;
 gap: 3rem;
@@ -36,7 +37,7 @@ position: relative;
 overflow: hidden;
 }
 
-.imagecard56{
+.imagecardnew{
     position: absolute;
     right: 0px;
     top: 9rem;
@@ -118,7 +119,7 @@ z-index: 11;
         .read-btn2{
             padding-right: 10rem;
         }
-        .imagecard56{
+        .imagecardnew{
          
             top: 9.7rem;
             left: 10rem;
@@ -131,33 +132,21 @@ width: 10rem;
 }
 
 @media screen and (max-width: 700px) {
-    .imagecard56{    
+    .imagecardnew{    
         top: 9.9rem;   
        width: 10.3rem;
-       
     }
-  .blogtwo2{
-    background-color: black;
-    margin-bottom: -8rem;
-  }
+    .blogtwo2{
+        margin-bottom: -7rem;
+    }
 
 }
-
-
-@media screen and (max-width: 360px) {
-    .imagecard56{       
-           
-     
-       
+@media screen and (max-width: 320px) {
+    .imagecardnew{       
+        left: 7rem;
     }
     .blogtwo-boxone2 p{
-        padding: 0 1.9rem;
+        padding: 0 1.2rem;
     font-size: 0.9rem;
     }
-    .blogtwo-boxone2 span{
-        margin-right: 10.7rem;
-        }
-        .read-btn2{
-            padding-right: 10.7rem;
-        }
 }
