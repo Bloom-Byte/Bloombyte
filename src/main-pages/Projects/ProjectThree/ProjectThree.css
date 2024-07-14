@@ -1,14 +1,9 @@
 .projectree-wall{
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
+   
    background: #01080F;
    display: flex;
    flex-direction: column;
    gap: 3rem;
-   padding-bottom: 180rem;
    
 }
 
@@ -171,6 +166,10 @@ line-height: 1.4rem;
    font-size: 0.9rem;
 }
 
+.spelz{
+   padding-left: 1rem;
+}
+
 .projectree-box{
   display: flex;
   justify-content: center;
@@ -295,6 +294,14 @@ border-bottom-right-radius: 1rem;
 padding-left: 1.8rem;
 
  }
+
+ .projectree-top {
+   padding-bottom: 2rem;
+ }
+
+ .top-btn{
+   margin-left: 5rem;
+}
 }
 
 @media screen and (max-width: 700px) {
@@ -375,9 +382,7 @@ align-items: center;
    height: 10rem;
    width: 14rem;
    }
-.projectree-wall{
-   padding-bottom: 163rem;
-}
+
 
    }
 
@@ -391,10 +396,7 @@ align-items: center;
          height: 10rem;
          width: 13rem;
          }
-      
-.projectree-wall{
-   padding-bottom: 172rem;
-}
+     
    }
    
 

@@ -1,14 +1,10 @@
 .careerthree-wall{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+   
     background: #01080F;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-bottom: 67rem;
+ 
 }
 
 .careertree-top{
@@ -155,10 +151,7 @@
     .careerbox-wall{
        gap: 1rem;
        }
-.careerthree-wall{
- 
-   padding-bottom: 70rem;
-}
+
     
 .careerbox-one h3{
    
@@ -177,10 +170,7 @@
            .top-btnz{
             margin-left: 0rem;
          }
-         .careerthree-wall{
-          
-            padding-bottom: 75rem;
-         }
+       
 
          .linez hr{ 
             height: 73px; 
@@ -225,8 +215,4 @@
         gap: 4.5rem;
      }
    
-        .careerthree-wall{
-       
-         padding-bottom: 82rem;
-}
  }

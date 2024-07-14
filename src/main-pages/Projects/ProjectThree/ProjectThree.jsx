@@ -122,18 +122,20 @@ const ProjectThree = () => {
       <div className="topic-box">
       <div className="topic-wall">
           <h3>Problems Encountered</h3>
-          <p><li>Integrating with various third-party systems and legacy data sources</li>
+          <p className='spelz'><ul><li>Integrating with various third-party systems and legacy data sources</li>
             <li>Handling large volumes of real-time data from multiple locations</li>
-          <li>Ensuring data security and compliance with industry regulations</li></p>
+          <li>Ensuring data security and compliance with industry regulations</li></ul></p>
     </div>
       </div>
       <div className="topic-box">
       <div className="topic-wall">
           <h3>Solutions</h3>
-          <p><li>Implemented a microservices architecture for scalability and flexibility</li>
+          <p className='spelz'> 
+            <ul>
+            <li>Implemented a microservices architecture for scalability and flexibility</li>
             <li>Developed a robust data ingestion pipeline for real-time data processing</li>
             <li>Integrated advanced algorithms for route optimization and vehicle tracking</li>
-          <li>Deployed secure and compliant cloud infrastructure for data storage and processing</li>
+          <li>Deployed secure and compliant cloud infrastructure for data storage and processing</li></ul>
           </p>
     </div>
       </div>
@@ -202,8 +204,7 @@ const ProjectThree = () => {
            
 </div>
       </div>
-      <More />
-      <HomeFooter/>
+     
     </section>
 
     )

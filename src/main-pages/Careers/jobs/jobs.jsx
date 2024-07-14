@@ -16,6 +16,27 @@ const jobs = () => {
             },
             {
               type: 'Full-time',
+              location: 'Remote',
+              salary: '₦250,000',
+              title: 'Mobile App Developer',
+              description: 'We are seeking a skilled Mobile App Developer to join our innovative team.'
+            },
+            {
+              type: 'Part-time',
+              location: 'On-site',
+              salary: '₦180,000',
+              title: 'UI/UX Designer',
+              description: 'We are seeking a creative UI/UX Designer to enhance our user interfaces.'
+            },
+            {
+              type: 'Contract',
+              location: 'Remote',
+              salary: '₦220,000',
+              title: 'DevOps Engineer',
+              description: 'We are seeking a proficient DevOps Engineer to streamline our operations.'
+            },
+            {
+              type: 'Full-time',
               location: 'On-site',
               salary: '₦300,000',
               title: 'Junior Web Developer',
@@ -28,13 +49,7 @@ const jobs = () => {
               title: 'Frontend Developer',
               description: 'We are seeking an experienced Senior Web Developer to join our dynamic team.'
             },
-            {
-              type: 'Full-time',
-              location: 'On-site',
-              salary: '₦400,000',
-              title: 'Backend Developer',
-              description: 'We are seeking an experienced Senior Web Developer to join our dynamic team.'
-            },  ];
+             ];
   return (
       <section className='move2'>
            <div className="move-heading2">

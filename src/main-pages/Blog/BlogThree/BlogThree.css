@@ -1,14 +1,10 @@
 .blogthree-wall{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    
     background: #01080F;
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-bottom: 95rem;
+   
 }
 
 .blog-top1{
@@ -204,9 +200,7 @@ font-size: 0.9rem;
     .share-btn{
         padding-right: 35rem;
     }
-    .blogthree-wall{
-        padding-bottom: 93rem;
-    }
+   
     }
     
  @media screen and (max-width: 700px) {
@@ -238,10 +232,7 @@ font-size: 0.9rem;
                     padding-right: 0rem;
                 }
 
-                .blogthree-wall{
-                     padding-bottom: 115rem;
-              
-                 }
+            
            }
  
 
@@ -254,17 +245,5 @@ font-size: 0.9rem;
         font-size: 1.2rem;
            }
           
-           .blogthree-wall{
-            
-            padding-bottom: 127rem;
-               }
- }
-
- @media screen and (max-width: 320px) {
-
-    .blogthree-wall{
-        padding-bottom: 140rem;
-              
-           }
-
+        
  }

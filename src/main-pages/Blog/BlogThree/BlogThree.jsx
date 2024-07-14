@@ -58,8 +58,6 @@ const BlogThree = () => {
       <div className="share-btn">
         <button onClick={handleShareClick}>Share Post <MdOutlineShare className='share-icon'/></button>
       </div>
-      <New />
-      <Homefooter/>
     </section>
   )
 }

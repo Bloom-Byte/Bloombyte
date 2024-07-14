@@ -64,24 +64,26 @@ const Careersthree = () => {
           <div className="topic-boxz">
       <div className="topic-wally">
           <h3>Key Responsibilities</h3>
-          <p><li>Develop and maintain responsive, high-performance web applications</li>
+          <p className='spelz'> <ul><li>Develop and maintain responsive, high-performance web applications</li>
             <li>Collaborate with designers, project managers, and other stakeholders throughout the project lifecycle</li>
             <li>Implement best practices for code quality, maintainability, and scalability</li>
                       <li>Mentor and provide guidance to junior developers</li>
                       <li>Stay up-to-date with emerging web technologies and industry trends</li>
-       </p>
+       </ul>
+          </p>
     </div>
           </div>
           <div className="topic-boxz">
       <div className="topic-wally">
           <h3>Qualifications</h3>
-          <p><li>5+ years of experience in web development</li>
+          <p className='spelz'>  <ul><li>5+ years of experience in web development</li>
             <li>Expertise in React, Node.js, and modern JavaScript frameworks</li>
             <li>Strong knowledge of HTML5, CSS3, and responsive design principles</li>
                       <li>Experience with Agile methodologies and version control systems</li>
                       <li>Excellent problem-solving and communication skills</li>
                       <li>Bachelor's degree in Computer Science or a related field (or equivalent experience)</li>
-                  </p>
+          </ul>        
+          </p>
                   
               </div>
           </div>
@@ -94,8 +96,7 @@ const Careersthree = () => {
            
 </div>
       </div>
-      <JOBS />
-      <Homefooter/>
+     
     </section>
   )
 }
