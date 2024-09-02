@@ -75,6 +75,7 @@ cursor: pointer;
 
 .three-content{
     padding-left: 2.1rem;
+  
 }
 
 .three-content hr{
@@ -88,11 +89,16 @@ cursor: pointer;
     font-size: clamp(0.8rem, 1.9vw, 1.5rem);
    display: flex;
     align-items: center;
+    position: relative;
 }
 
 .arrowicon-tree{
+    
     position: absolute;
-    left: 90%;
+    right: 0;
+    left: 0;
+    margin-left: clamp(10rem, 83vw, 77rem);
+
 }
 
 @media (max-width: 1200px) {
@@ -135,5 +141,11 @@ gap: clamp(5rem, 29vw, 18rem);
             .three-btn{
                 display: flex;
                 flex-direction: column;
+            }
+
+            .arrowicon-tree{
+    
+                  margin-left: clamp(10rem, 77vw, 77rem);
+            
             }
 }
