@@ -19,7 +19,7 @@ const Careersthree = () => {
         <button className='arrowz' onClick={handleBackClick}><HiMiniArrowSmallLeft /></button>
         <p><span>Career</span>/Senior Web Developer</p>
         <div className="top-btnz">
-          <button>Apply <MdArrowOutward/></button>
+          <button onClick={() => navigate('/careersfour')}>Apply <MdArrowOutward/></button>
         </div>   
           </div>
           <div className="careerbox">

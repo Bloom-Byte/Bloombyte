@@ -15,6 +15,7 @@ import Contactmain from './main-pages/Contact/Contactmain'
 import SBlogThree from './main-pages/Blog/BlogThree/SBlogThree'
 import SCareersthree from './main-pages/Careers/Careersthree/SCareersthree'
 import SProjectThree from './main-pages/Projects/ProjectThree/SProjectThree'
+import CareersFour from './main-pages/Careers/CareersFour/CareersFour'
 
 const App = () => {
   return (
@@ -23,7 +24,7 @@ const App = () => {
       <Route path="/projectthree" element={<BackgroungImg backgroundClass="background1"><SProjectThree /></BackgroungImg>} />
       <Route path="/careersthree" element={<BackgroungImg backgroundClass="background1"><SCareersthree /></BackgroungImg>} />
       <Route path="/blogthree" element={<BackgroungImg backgroundClass="background1"><SBlogThree /></BackgroungImg>} />
-      
+      <Route path="/careersfour" element={<BackgroungImg backgroundClass="background1"><CareersFour /></BackgroungImg>} />
         <Route path="*" element={
           <>
     <Navbar />

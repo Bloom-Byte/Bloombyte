@@ -1,8 +1,10 @@
-import React, { useState }  from 'react'
+import React, { useState, useEffect } from 'react'
 import './ProjectTwo.css'
 import { useNavigate } from 'react-router-dom';
+import { getPublishedProjects } from '../../../api';
 
 const ProjectTwo = () => {
+    const [projects, setProjects] = useState([]);
     const [activeSelector, setActiveSelector] = useState('E-commerce');
     const navigate = useNavigate();
 
@@ -14,17 +16,27 @@ const ProjectTwo = () => {
     navigate('/projectthree');
 };
   
-  const projects = [
-    { id: 1, title: 'Platform for Outdoor Gear Company', categories: ['E-commerce', 'Logistics'] },
-    { id: 2, title: 'Logistics Management System', categories: ['E-commerce',, 'EdTech'] },
-    { id: 3, title: 'CRM for Small Businesses', categories: ['E-commerce', 'CRM','Others'] },
-    { id: 4, title: 'Online Learning Platform', categories: ['E-commerce','Others'] },
-    { id: 5, title: 'Miscellaneous Project', categories: ['E-commerce', 'EdTech'] },
-    { id: 6, title: 'All Data Project', categories: ['E-commerce', 'CRM'] },
-   ];
-  
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await getPublishedProjects();
+        console.log('Fetched projects:', response); // Log the entire response for debugging
+        const fetchedProjects = response.data.projects; // Access the projects array from the response
+        
+        // Sort projects by creation date or ID
+        const sortedProjects = fetchedProjects.sort((a, b) => {
+            return new Date(b.created_at || 0) - new Date(a.created_at || 0) || b.id - a.id;
+        });
 
-const filteredProjects = projects.filter(project => project.categories.includes(activeSelector));
+        setProjects(sortedProjects); // Update the state with sorted projects
+        onProjectsChange(sortedProjects.length); // Notify parent component about the number of projects
+      } catch (error) {
+        console.error('Error fetching published projects:', error); // Log any errors
+      }
+    };
+
+    fetchProjects();
+  }, []);
 
   return (
       <section className='project-twowall'>
@@ -64,11 +76,22 @@ const filteredProjects = projects.filter(project => project.categories.includes(
               </div>
       </div>
       <div className="project-cards">
-                {filteredProjects.map((project) => (
+                {projects && projects.map((project) => (
                     <div className="project-card" key={project.id}>
-                        <div className="white"></div>
+                        <div className="white">
+                        {/* Display the project image inside the white div */}
+                        {project.image_urls && project.image_urls.length > 0 && (
+                            <img 
+                                src={project.image_urls[0]} 
+                                alt={project.name} 
+                                onError={(e) => {
+                                    e.target.src = 'path/to/fallback/image.jpg'; // Fallback image if the original fails to load
+                                }}
+                            />
+                        )}
+                    </div>
                         <div className="projectk-content">
-                      <h3>{project.title}</h3>
+                      <h3>{project.name}</h3>
                      
                             <button onClick={handleViewProject}>View Project</button> 
                         </div>
