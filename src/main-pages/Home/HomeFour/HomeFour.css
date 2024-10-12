@@ -84,6 +84,9 @@
 
 }
 @media (max-width: 700px) {
+.four-begin{
+ gap: 1rem;
+ }
 .homefour{
     flex-direction: column;
 }
@@ -95,15 +98,20 @@
 
 .four-content p{
     text-align: center;
+    
 }
 
 .mini-content {
     gap: 2rem;
 }
 
+.four-box{
+    flex-direction: column;
+}
+
 .fbox1, .fbox2{
     height: clamp(12rem, 3vw, 14rem);
-    width: 39rem;
+    width: 18rem;
  }
  .ten p, .five-hundred p, .ninety-eight p{
     font-size: 0.6rem;

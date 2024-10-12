@@ -221,53 +221,21 @@ export const updateBlog = async (blog_id, blogData) => {
   return response.data;
 };
 
+// Function to get open job openings
+export const getOpenJobOpenings = async () => {
+  const token = localStorage.getItem('access_token');
+  console.log('Retrieved token for getOpenJobOpenings:', token);
 
-
-const clientId = '1000.GLCOPIL1HXDZF6HB6372L68AALXNNO';
-const clientSecret = '7dca41743736c7476b857b1918184765ce07a4c0cd';
-const refreshToken = 'YOUR_REFRESH_TOKEN'; // You need to obtain this from Zoho Recruit
-
-export const getZohoAccessToken = async () => {
-  const data = qs.stringify({
-    refresh_token: refreshToken,
-    client_id: clientId,
-    client_secret: clientSecret,
-    grant_type: 'refresh_token',
-  });
-
-  const response = await axios.post('https://accounts.zoho.com/oauth/v2/token', data, {
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-  });
-
-  return response.data.access_token;
-};
-
-export const addNewJobOpening = async (jobData) => {
-  const accessToken = await getZohoAccessToken();
-  const response = await axios.post('https://recruit.zoho.com/recruit/v2/JobOpenings', jobData, {
-    headers: {
-      'Authorization': `Zoho-oauthtoken ${accessToken}`,
-      'Content-Type': 'application/json',
-    },
-  });
-
-  return response.data;
-};
-
-export const discoverZohoAPI = async () => {
-  const accessToken = await getZohoAccessToken();
   try {
-    const response = await axios.get('https://recruit.zoho.com/recruit/v2', {
+    const response = await api.get('/job-openings/open', {
       headers: {
-        'Authorization': `Zoho-oauthtoken ${accessToken}`,
+        'Authorization': `Bearer ${token}`,
       },
     });
-    console.log('API Discovery Response:', response.data);
+    console.log('getOpenJobOpenings response:', response.data);
     return response.data;
   } catch (error) {
-    console.error('Error discovering API:', error.response?.data || error.message);
+    console.error('Error in getOpenJobOpenings:', error);
     throw error;
   }
 };

@@ -32,6 +32,7 @@ gap: 11rem;
 
 .five-content p{
     text-align: center;
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
 }
 
 .five-box{
@@ -96,6 +97,8 @@ align-items: center;
     gap: 7rem;
 }
 
+
+
 .five-box1 p, .five-box2 p{
    
     font-size: 0.8rem;
@@ -139,15 +142,20 @@ padding-left: 2rem;
     font-size: clamp(0.5rem, 1.7vw, 1rem);
 }
 
+.five-box{
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .five-box1, .five-box2{
-     height: 12rem;
+     height: 7rem;
      padding-bottom: 13rem;
-     
+     width: 15rem;
    }
 
    .five-box1 p, .five-box2 p{
    
-    font-size: clamp(0.1rem, 2vw, 0.4rem);
+    font-size: clamp(0.5rem, 2vw, 0.4rem);
     
     }
 
@@ -159,9 +167,7 @@ padding-left: 2rem;
     bottom: 0;
     
 }
-.five-box{
-    gap: 0.9rem;
-}
+
 .break{
     display: none;
 }
