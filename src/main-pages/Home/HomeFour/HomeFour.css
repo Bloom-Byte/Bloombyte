@@ -7,7 +7,7 @@
 .homefour{
    
     display: flex;
-
+    justify-content: center;
     gap: clamp(5rem, 13vw, 11rem);
     flex-direction: row;
 }
