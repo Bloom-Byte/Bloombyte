@@ -42,38 +42,7 @@ const ProjectTwo = () => {
       <section className='project-twowall'>
           <div className="projecttwo-top">
               <h1>Projects</h1>
-              <div className="selectors">
-              <p
-            className={activeSelector === 'E-commerce' ? 'active' : ''}
-            onClick={() => handleSelectorClick('E-commerce')}
-          >
-            E-commerce
-          </p>
-          <p
-            className={activeSelector === 'Logistics' ? 'active' : ''}
-            onClick={() => handleSelectorClick('Logistics')}
-          >
-            Logistics
-          </p>
-          <p
-            className={activeSelector === 'CRM' ? 'active' : ''}
-            onClick={() => handleSelectorClick('CRM')}
-          >
-            CRM
-          </p>
-          <p
-            className={activeSelector === 'EdTech' ? 'active' : ''}
-            onClick={() => handleSelectorClick('EdTech')}
-          >
-            EdTech
-          </p>
-          <p
-            className={activeSelector === 'Others' ? 'active' : ''}
-            onClick={() => handleSelectorClick('Others')}
-          >
-            Others
-          </p>
-              </div>
+            
       </div>
       <div className="project-cards">
                 {projects && projects.map((project) => (

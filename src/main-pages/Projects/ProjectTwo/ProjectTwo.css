@@ -4,15 +4,15 @@
 
 .projecttwo-top{
     display: flex;
-justify-content: center;
-align-items: center;
+   justify-content: center;
+   align-items: center;
 }
 
 .projecttwo-top h1{
     font-size: clamp(1.5rem, 4vw, 2.2rem);
-    padding-left: 2.8rem;
+   text-align: center;
     color: #067EF6;
-margin-right: 12rem;
+
 font-family: 'Monda-Regular', sans-serif;
 
 }
@@ -47,8 +47,10 @@ gap: 1rem;
   }
 
   @media screen and (max-width: 1200px) {
+    .projecttwo-top{
+        padding-bottom: 0rem;
+    }
     .projecttwo-top h1{
-        margin-right: 5rem;
         padding-left: 0rem;
     }
     .selectors{
@@ -67,7 +69,7 @@ gap: 1rem;
 }  
 
 .projecttwo-top h1{
-    margin-right: 0rem;
+  
 }
 .projecttwo-top{
     gap: 0.7rem;
@@ -89,13 +91,14 @@ min-height: 50vh;
 }
 
 .project-card{
-    border-top-right-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
     width: 28rem;
    overflow: hidden;
 }
 
 .white{
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    width: 25rem;
     height: 13rem;
     background-color: #D2D2D5;
     padding-bottom: 0; /* Adjusted padding */
@@ -119,6 +122,7 @@ min-height: 50vh;
   height: 7rem; 
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  width: 25rem;
 }
 
 .projectk-content h3{
@@ -150,17 +154,16 @@ transition: .3s ease-in-out;
         justify-content: center;
     }
     
-    .project-card{
-        width: 23rem;
+  
+    .white{
+        width: 20rem;
+    }
+    .projectk-content{
+        width: 19rem;
     }
    }
 
-   @media screen and (max-width: 1200px) {
-    .projectk-content h3{
-        font-size: 0.9rem;
-           }
-    .project-card{
-        width: 20rem;
-    }
+   @media screen and (max-width: 700px) {
+    
 
 }
