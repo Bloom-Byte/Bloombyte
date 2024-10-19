@@ -6,6 +6,7 @@ import { getPublishedProjects } from '../../../api';
 const ProjectTwo = () => {
     const [projects, setProjects] = useState([]);
     const [activeSelector, setActiveSelector] = useState('E-commerce');
+    const [isLoading, setIsLoading] = useState(true); // New state for loading
     const navigate = useNavigate();
 
     const handleSelectorClick = (selector) => {
@@ -32,6 +33,8 @@ const ProjectTwo = () => {
         onProjectsChange(sortedProjects.length); // Notify parent component about the number of projects
       } catch (error) {
         console.error('Error fetching published projects:', error); // Log any errors
+      } finally {
+        setIsLoading(false); // Set loading to false after fetching
       }
     };
 
@@ -44,7 +47,10 @@ const ProjectTwo = () => {
               <h1>Projects</h1>
             
       </div>
-      <div className="project-cards">
+      {isLoading ? (
+        <div style={{ textAlign: 'center', padding: '20px' }}>Loading...</div> // Inline style for loading
+      ) : (
+        <div className="project-cards">
                 {projects && projects.map((project) => (
                     <div className="project-card" key={project.id}>
                         <div className="white">
@@ -67,6 +73,7 @@ const ProjectTwo = () => {
                     </div>
                 ))}
             </div>
+      )}
    </section>
   )
 }
