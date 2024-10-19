@@ -119,6 +119,8 @@
     .web, .mobile, .ecommerce, .crm, .logistics, .edtech {
       width: 40rem;
     }
+
+    
     .home-three-container{
     
       gap: 2.5rem;
@@ -129,7 +131,11 @@
   @media (max-width: 700px) {
     .web, .mobile, .ecommerce, .crm, .logistics, .edtech {
       width: 20rem;
+      font-size: 0.8rem;
     }
+   .web svg, .mobile svg, .ecommerce svg, .crm svg, .logistics svg, .edtech svg {
+    font-size: 1.3rem;
+   }
     .home-three-container{
       gap: 1rem;
     }
